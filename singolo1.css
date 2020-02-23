@@ -154,36 +154,37 @@ body {
   display: flex;
 }
 
+.icon_custom-disign {
+  background-image: url("assets/icons/pen.png");
+}
+
+.icon_inovative-ideas {
+  background-image: url("assets/icons/bulb.png");
+}
+
+.icon_love-is-answer {
+  background-image: url("assets/icons/heart.png");
+}
+
+.icon_responsive-layout {
+  background-image: url("assets/icons/phone.png");
+}
+
+.icon_round-lock-support {
+  background-image: url("assets/icons/bubble.png");
+}
+
+.ico_feel-like-star {
+  background-image: url("assets/icons/star.png");
+}
+
 .icon-circle {
   border: solid 2px #2d303a;
   border-radius: 50%;
   min-width: 55px;
   height: 55px;
-  padding: 0;
-}
-
-.icon_custom-disign {
-  background: url("assets/icons/pen.png") no-repeat;
-}
-
-.icon_inovative-ideas {
-  background: url("assets/icons/bulb.png") no-repeat;
-}
-
-.icon_love-is-answer {
-  background: url("assets/icons/heart.png") no-repeat;
-}
-
-.icon_responsive-layout {
-  background: url("assets/icons/phone.png") no-repeat;
-}
-
-.icon_round-lock-support {
-  background: url("assets/icons/bubble.png") no-repeat;
-}
-
-.ico_feel-like-star {
-  background: url("assets/icons/star.png") no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .service__description > h3 {
