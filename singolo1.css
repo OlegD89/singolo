@@ -8,14 +8,17 @@ body {
   margin: 0;
 }
 
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header {
   background-color: #2d303a;
-  box-shadow: 0px 4px 20px black;
 }
 
 .header__wrapper {
-  display: flex;
-  justify-content: space-between;
+  height: 85px;
 }
 
 .header__navigation {
@@ -28,8 +31,88 @@ body {
   padding-top: 29px;
 }
 
+.header_shadow {
+  height: 10px;
+  background-color: #323746;
+}
+
 .wrapper {
   max-width: 1024px;
+}
+
+.visual__content {
+  height: 600px;
+  background-color: #f06c64;
+}
+
+.visual__content__wrapper {
+  align-items: center;
+  padding: 52px 45px;
+}
+
+.navigation__icon {
+  background: url("assets/icons/chev.png") no-repeat;
+  opacity: 0.25;
+  width: 18px;
+  height: 28px;
+  margin-top: 25px;
+}
+
+.navigation_right {
+  transform: scaleX(-1);
+}
+
+.navigation__icon:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.phone__base {
+  border-radius: 28px;
+  z-index: 5;
+}
+
+.phone__screen {
+  z-index: 3;
+}
+
+.vertical__phone {
+  position: relative;
+  left: -107px;
+}
+
+.vertical__phone__base {
+  box-shadow: 26px 26px 0px rgba(0, 0, 0, 0.2);
+}
+
+.vertical__phone__screen {
+  background: url("assets/images/screen2.jpg") no-repeat;
+  width: 188px;
+  height: 333px;
+  position: absolute;
+  left: 14px;
+  top: 65px;
+  background-position: -14px -133px;
+}
+
+.horizontal__phone {
+  position: relative;
+  left: -44px;
+}
+
+.horizontal__phone__base {
+  transform: rotate(90deg);
+  box-shadow: 26px -26px 0px rgba(0, 0, 0, 0.2);
+}
+
+.horizontal__phone__screen {
+  background: url("assets/images/screen1.jpg") no-repeat;
+  width: 333px;
+  height: 188px;
+  position: absolute;
+  left: -61px;
+  top: 135px;
+  background-position: -125px -118px;
 }
 
 .logo_text {
@@ -59,14 +142,12 @@ body {
 
 .navigation .navigation__link:first-child {
   list-style: none;
-}
-
-.navigation {
-  display: flex;
+  color: #f06c64;
 }
 
 .navigation__link:hover {
   color: #f06c64;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=singolo1.css.map */

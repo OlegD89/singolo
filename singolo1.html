@@ -8,28 +8,38 @@
 </head>
 <body>
     <header class="header">
-        <div class="wrapper header__wrapper">
-            <div class="logo header__logo">
-                <a href="#" class="logo__link"><h1 class="logo_text">SINGOLO</h1><span class="logo_copyright">*</span></a>
-            </div>
-            <div class="header__navigation">
-                <ul class="navigation">
-                    <li class="navigation__link">Home</li>
-                    <li class="navigation__link">Services</li>
-                    <li class="navigation__link">Portfolio</li>
-                    <li class="navigation__link">About</li>
-                    <li class="navigation__link">Contact</li>
-                </ul>
+        <div class="wrapper">
+            <div class="header__wrapper flex">
+                <div class="logo header__logo">
+                    <a href="#" class="logo__link"><h1 class="logo_text">SINGOLO</h1><span class="logo_copyright">*</span></a>
+                </div>
+                <div class="header__navigation">
+                    <ul class="navigation flex">
+                        <li class="navigation__link">Home</li>
+                        <li class="navigation__link">Services</li>
+                        <li class="navigation__link">Portfolio</li>
+                        <li class="navigation__link">About</li>
+                        <li class="navigation__link">Contact</li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <div class="header_shadow"></div>
     </header>
     <main>
         <section class="visual__content">
             <div class="wrapper">
-                <span class="navigation__icon navigation_left"></span>
-                <div class="layout-2-column">
-                    <img src="./assets/img/vertical-phone.jpg" alt="Телефон расположенный вертикально" class="vertical__phone">
-                    <img src="./assets/img/horizontal-phone.jpg" alt="Телефон расположенный горизонтально" class="horizontal__phone">
+                <div class="visual__content__wrapper flex">
+                    <span class="navigation__icon navigation_left"></span>
+                    <div class="vertical__phone">
+                        <span class="phone__screen vertical__phone__screen"></span>
+                        <img class="phone__base vertical__phone__base" src="./assets/images/phone.png" alt="Телефон расположенный вертикально">
+                    </div>
+                    <div class="horizontal__phone">
+                        <span class="phone__screen horizontal__phone__screen"></span>
+                        <img class="phone__base horizontal__phone__base" src="./assets/images/phone.png" alt="Телефон расположенный горизонтально">
+                    </div>
+                    <span class="navigation__icon navigation_right"></span>
                 </div>
             </div>
         </section>
