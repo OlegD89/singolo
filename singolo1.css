@@ -38,6 +38,7 @@ body {
 
 .wrapper {
   max-width: 1024px;
+  margin: auto;
 }
 
 .layout-3-columns {
@@ -125,8 +126,21 @@ body {
   background-position: -125px -118px;
 }
 
-.services__wrapper {
+.visual_content_shadow {
+  height: 10px;
+  background-color: #ea676b;
+}
+
+.visual_content_form {
+  height: 590px;
+}
+
+.our__services {
   background-color: #f2f2f2;
+}
+
+.services {
+  margin-top: 15px;
 }
 
 .services__wrapper > * {
@@ -200,6 +214,20 @@ body {
 
 .service__description {
   margin-left: 20px;
+  margin-right: 15px;
+}
+
+.services_shadow {
+  height: 10px;
+  background-color: #ffffff;
+}
+
+.service__description > p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .logo_text {
