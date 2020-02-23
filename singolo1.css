@@ -48,7 +48,6 @@ body {
 
 .layout-3-columns > * {
   width: 33%;
-  margin-top: 15px;
 }
 
 .visual__content {
@@ -166,6 +165,7 @@ body {
 
 .service {
   display: flex;
+  margin-top: 15px;
 }
 
 .icon_custom-disign {
@@ -206,12 +206,6 @@ body {
   margin-bottom: 0;
 }
 
-.service__description > p {
-  font-size: 1.2rem;
-  line-height: 2.2rem;
-  margin-top: 7px;
-}
-
 .service__description {
   margin-left: 20px;
   margin-right: 15px;
@@ -223,6 +217,9 @@ body {
 }
 
 .service__description > p {
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  margin-top: 7px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
