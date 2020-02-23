@@ -40,6 +40,16 @@ body {
   max-width: 1024px;
 }
 
+.layout-3-columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.layout-3-columns > * {
+  width: 33%;
+  margin-top: 15px;
+}
+
 .visual__content {
   height: 600px;
   background-color: #f06c64;
@@ -113,6 +123,82 @@ body {
   left: -61px;
   top: 135px;
   background-position: -125px -118px;
+}
+
+.services__wrapper {
+  background-color: #f2f2f2;
+}
+
+.services__wrapper > * {
+  margin: 0 12px 0 40px;
+}
+
+.services__description__layout {
+  padding-top: 60px;
+  margin-bottom: 30px;
+  margin-right: 40px;
+}
+
+.services__header {
+  font-size: 3rem;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.services__description {
+  line-height: 3rem;
+}
+
+.service {
+  display: flex;
+}
+
+.icon-circle {
+  border: solid 2px #2d303a;
+  border-radius: 50%;
+  min-width: 55px;
+  height: 55px;
+  padding: 0;
+}
+
+.icon_custom-disign {
+  background: url("assets/icons/pen.png") no-repeat;
+}
+
+.icon_inovative-ideas {
+  background: url("assets/icons/bulb.png") no-repeat;
+}
+
+.icon_love-is-answer {
+  background: url("assets/icons/heart.png") no-repeat;
+}
+
+.icon_responsive-layout {
+  background: url("assets/icons/phone.png") no-repeat;
+}
+
+.icon_round-lock-support {
+  background: url("assets/icons/bubble.png") no-repeat;
+}
+
+.ico_feel-like-star {
+  background: url("assets/icons/star.png") no-repeat;
+}
+
+.service__description > h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.service__description > p {
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  margin-top: 7px;
+}
+
+.service__description {
+  margin-left: 20px;
 }
 
 .logo_text {
