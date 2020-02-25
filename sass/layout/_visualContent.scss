@@ -1,0 +1,36 @@
+.visual__content {
+    height: 600px;
+    background-color: $color-additional;
+}
+
+.visual__content__wrapper {
+    align-items: center;
+    padding: 52px 45px;
+}
+
+.navigation__icon {
+    background: url("assets/icons/chev.png") no-repeat;
+    opacity: 0.25;
+    width: 18px;
+    height: 28px;
+    margin-top: 25px;
+}
+
+.navigation_right {
+    transform: scaleX(-1)
+}
+
+.navigation__icon:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+.visual_content_shadow {
+    height: 10px;
+    background-color: $color-shadow-second;
+}
+
+.visual_content_form {
+    height: 590px;
+}

@@ -1,0 +1,61 @@
+
+
+.service {
+    display: flex;
+    margin-top: 15px;
+}
+
+
+.service__description {
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+.service__description > h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.service__description > p {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    margin-top: 7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.icon-circle {
+    border: solid 2px $color-dark;
+    border-radius: 50%;
+    min-width: 55px;
+    height: 55px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon_custom-disign {    
+    background-image: url("assets/icons/pen.png");
+}
+
+.icon_inovative-ideas {    
+    background-image: url("assets/icons/bulb.png");
+}
+
+.icon_love-is-answer {    
+    background-image: url("assets/icons/heart.png");
+}
+
+.icon_responsive-layout {    
+    background-image: url("assets/icons/phone.png");
+}
+
+.icon_round-lock-support {    
+    background-image: url("assets/icons/bubble.png");
+}
+
+.ico_feel-like-star {    
+    background-image: url("assets/icons/star.png");
+}

@@ -1,0 +1,22 @@
+.header {
+    background-color: $color-dark;
+}
+
+.header__wrapper {
+    height: 85px;
+}
+
+.header__navigation {    
+    padding-right: 16px;
+    padding-top: 6px;
+}
+
+.header__logo {
+    padding-left: 40px;
+    padding-top: 29px;
+}
+
+.header_shadow {
+    height: 10px;
+    background-color: $color-shadow;
+}

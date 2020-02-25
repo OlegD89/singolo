@@ -1,0 +1,12 @@
+.wrapper {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.layout-3-columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+.layout-3-columns > * {
+    width: 33%;
+}

@@ -1,0 +1,24 @@
+
+.navigation__link {
+    color: $color-light;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 20px 27px 20px 2px;
+}
+
+.navigation .navigation__link:first-child {
+    list-style: none;
+}
+
+.navigation__link {
+    color: $color-light;
+}
+
+.navigation_link_text:hover {
+    color: $color-additional;
+    cursor: pointer;
+}
+
+.link_active {
+    color: $color-additional;
+}
