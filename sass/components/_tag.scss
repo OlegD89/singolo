@@ -1,0 +1,11 @@
+.tag {
+    border: solid 1px $color-dark-second;
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.tag_ative {
+    border-color: $color-light-three;
+    color: $color-light-three;
+}

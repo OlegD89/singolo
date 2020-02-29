@@ -1,0 +1,20 @@
+.portfolio {
+    background-color: $color-dark;
+    color: $color-dark-second;
+}
+
+.portfolio__section {
+    padding: 60px 40px;
+}
+
+.portfolio-description__header {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 22px;
+}
+
+.portfolio_shadow {
+    height: 4px;
+    background-color: $color-shadow;
+}

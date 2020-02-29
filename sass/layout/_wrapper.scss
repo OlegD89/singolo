@@ -1,12 +1,22 @@
 .wrapper {
-    max-width: 1024px;
+    max-width: 1020px;
     margin: auto;
 }
 
 .layout-3-columns {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .layout-3-columns > * {
-    width: 33%;
+    width: 32%;
+}
+
+.layout-4-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layout-4-columns > * {
+    width: 23.5%;
 }

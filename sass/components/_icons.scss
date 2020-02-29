@@ -1,0 +1,57 @@
+.icon-circle {
+    border: solid 2px $color-dark;
+    border-radius: 50%;
+    min-width: 55px;
+    height: 55px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-circle-min {
+    border: solid 1px $color-dark-second;
+    border-radius: 50%;
+    min-width: 29px;
+    height: 29px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon_custom-disign {    
+    background-image: url("assets/icons/pen.png");
+}
+
+.icon_inovative-ideas {    
+    background-image: url("assets/icons/bulb.png");
+}
+
+.icon_love-is-answer {    
+    background-image: url("assets/icons/heart.png");
+}
+
+.icon_responsive-layout {    
+    background-image: url("assets/icons/phone.png");
+}
+
+.icon_round-lock-support {    
+    background-image: url("assets/icons/bubble.png");
+}
+
+.ico_feel-like-star {    
+    background-image: url("assets/icons/star.png");
+}
+
+.icon_facebook {    
+    background-image: url("assets/icons/facebook.png");
+}
+
+.icon_google {    
+    background-image: url("assets/icons/google+.png");
+}
+
+.icon_twitter {    
+    background-image: url("assets/icons/twitter.png");
+}
+
+.icon_in {    
+    background-image: url("assets/icons/linkedin.png");
+}
