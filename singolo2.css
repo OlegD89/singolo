@@ -113,7 +113,7 @@ body {
 
 .gallery-image_2 {
   background-image: url("assets/images/Project_2.png");
-  background-position: -82px -43px;
+  background-position: -81px -43px;
 }
 
 .gallery-image_3 {
@@ -133,7 +133,7 @@ body {
 
 .gallery-image_6 {
   background-image: url("assets/images/Project_6.png");
-  background-position: -16px -4px;
+  background-position: -15px -4px;
 }
 
 .gallery-image_7 {
@@ -153,17 +153,17 @@ body {
 
 .gallery-image_10 {
   background-image: url("assets/images/Project_10.png");
-  background-position: -141px -112px;
+  background-position: -140px -113px;
 }
 
 .gallery-image_11 {
   background-image: url("assets/images/Project_11.png");
-  background-position: -143px -174px;
+  background-position: -143px -175px;
 }
 
 .gallery-image_12 {
   background-image: url("assets/images/Project_12.png");
-  background-position: -35px -59px;
+  background-position: -35px -60px;
 }
 
 .about-us {
@@ -196,32 +196,6 @@ body {
 .about-us_shadow {
   height: 4px;
   background-color: #ffffff;
-}
-
-.empolyee__name {
-  margin: 10px 0 9px;
-  letter-spacing: -0.05rem;
-}
-
-.employee__description {
-  font-size: 1.2rem;
-  line-height: 2rem;
-  letter-spacing: 0.05rem;
-  margin-top: 0;
-  height: 50px;
-}
-
-.employee__contacts {
-  display: flex;
-}
-.employee__contacts > * {
-  margin-right: 9px;
-}
-
-.employee__icon:hover {
-  border-color: #2d303a;
-  background-color: #bfbfbf;
-  cursor: pointer;
 }
 
 .tag {
@@ -292,6 +266,40 @@ body {
 
 .icon_in {
   background-image: url("assets/icons/linkedin.png");
+}
+
+.empolyee__name {
+  margin: 10px 0 9px;
+  letter-spacing: -0.05rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.employee__description {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  letter-spacing: 0.05rem;
+  margin: 0 0 25px;
+  min-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.employee__contacts {
+  display: flex;
+}
+.employee__contacts > * {
+  margin-right: 9px;
+}
+
+.employee__icon:hover {
+  border-color: #2d303a;
+  background-color: #bfbfbf;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=singolo2.css.map */
