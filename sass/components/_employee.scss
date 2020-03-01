@@ -1,0 +1,26 @@
+
+.empolyee__name {
+    margin:10px 0 9px;
+    letter-spacing: -0.05rem;
+    @include limit-line()
+}
+.employee__description {
+    font-size: 1.2rem;
+    line-height: 2.0rem;
+    letter-spacing: 0.05rem;
+    margin: 0 0 25px;
+    min-height: 40px;
+    @include limit-lines(2)
+}
+.employee__contacts {
+    display: flex;
+    >*{
+        margin-right: 9px;
+    }
+}
+
+.employee__icon:hover {
+    border-color: $color-dark;
+    background-color: darken($color: $color-light-second, $amount: 20%);
+    cursor: pointer;  
+}
