@@ -1,0 +1,79 @@
+.quote {
+    background-color: $color-additional;
+    color: $color-light-four;
+}
+
+.quote__section {
+    padding: 59px 40px;
+}
+
+.quote__header {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.quote__text {
+    margin: 20px 0;
+    font-size: 1.7rem;
+    line-height: 3rem;
+}
+
+.quote-description {
+    padding-bottom: 15px;
+}
+
+
+.contact-information__header {
+    margin-top: 5px;
+    letter-spacing: -0.02rem;
+}
+
+.contact-information__text {    
+    margin-top: 7px;
+    line-height: 2.2rem;
+    font-size: 1.2rem;
+}
+
+//Form
+.quote__input::placeholder {
+    color: $color-additional-lighter;
+}
+
+.quote__input, .quote-button {
+    background-color: $color-additional-darker;
+    color: $color-additional-lighter;
+}
+
+.quote__input {
+    font: $font;
+    width: 100%;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 10px 0 12px 14px;
+    margin: 9px 0;
+    font-size: 1.2rem;
+    letter-spacing: -0.02rem;
+}
+
+textarea.quote__input {
+    resize: none;
+    letter-spacing: -0.15rem;
+}
+
+.quote__input:focus {
+    outline: none;
+}
+
+.quote-button {
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.quote-button:hover {
+    cursor: pointer;
+    background-color: darken($color: $color-additional-darker, $amount: 20%)
+}

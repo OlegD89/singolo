@@ -1,0 +1,136 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Lato", "Open Sans", Verdana, Arial, sans-serif;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1020px;
+}
+
+.layout-3-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.layout-3-columns > * {
+  width: 32%;
+}
+
+.layout-4-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.layout-4-columns > * {
+  width: 23.5%;
+}
+
+.layout-2-columns-two-thirds {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.layout-2-columns-two-thirds > *:first-child {
+  width: 66%;
+}
+
+.layout-2-columns-two-thirds > *:last-child {
+  width: 32%;
+}
+
+.quote {
+  background-color: #f06c64;
+  color: #f0d8d9;
+}
+
+.quote__section {
+  padding: 59px 40px;
+}
+
+.quote__header {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.quote__text {
+  margin: 20px 0;
+  font-size: 1.7rem;
+  line-height: 3rem;
+}
+
+.quote-description {
+  padding-bottom: 15px;
+}
+
+.contact-information__header {
+  margin-top: 5px;
+  letter-spacing: -0.02rem;
+}
+
+.contact-information__text {
+  margin-top: 7px;
+  line-height: 2.2rem;
+  font-size: 1.2rem;
+}
+
+.quote__input::placeholder {
+  color: #f48c8f;
+}
+
+.quote__input, .quote-button {
+  background-color: #d6564f;
+  color: #f48c8f;
+}
+
+.quote__input {
+  font: "Lato", "Open Sans", Verdana, Arial, sans-serif;
+  width: 100%;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 10px 0 12px 14px;
+  margin: 9px 0;
+  font-size: 1.2rem;
+  letter-spacing: -0.02rem;
+}
+
+textarea.quote__input {
+  resize: none;
+  letter-spacing: -0.15rem;
+}
+
+.quote__input:focus {
+  outline: none;
+}
+
+.quote-button {
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+.quote-button:hover {
+  cursor: pointer;
+  background-color: #9b2a24;
+}
+
+/*# sourceMappingURL=singolo3.css.map */
