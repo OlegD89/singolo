@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .quote__section {
-  padding: 59px 40px;
+  padding: 59px 40px 11px 40px;
 }
 
 .quote__header {
@@ -79,6 +79,11 @@ h1, h2, h3, h4, h5 {
   padding-bottom: 15px;
 }
 
+.quote__shadow {
+  height: 6px;
+  background-color: #ea676b;
+}
+
 .contact-information__header {
   margin-top: 5px;
   letter-spacing: -0.02rem;
@@ -88,6 +93,20 @@ h1, h2, h3, h4, h5 {
   margin-top: 7px;
   line-height: 2.2rem;
   font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.reference {
+  margin: 2px 0 1px;
+  display: flex;
+  align-items: center;
+}
+
+.reference__text {
+  text-decoration: none;
+  color: #f0d8d9;
+  font-size: 1.2rem;
+  padding-left: 4px;
 }
 
 .quote__input::placeholder {
@@ -124,13 +143,92 @@ textarea.quote__input {
 .quote-button {
   display: inline-block;
   padding: 10px 30px;
-  margin: 10px 0;
   border-radius: 4px;
 }
 
 .quote-button:hover {
   cursor: pointer;
   background-color: #9b2a24;
+}
+
+.icon-small {
+  min-width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-circle {
+  border: solid 2px #2d303a;
+  border-radius: 50%;
+  min-width: 55px;
+  height: 55px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-circle-small {
+  border: solid 1px #666d89;
+  border-radius: 50%;
+  min-width: 29px;
+  height: 29px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon_custom-disign {
+  background-image: url("assets/icons/pen.png");
+}
+
+.icon_inovative-ideas {
+  background-image: url("assets/icons/bulb.png");
+}
+
+.icon_love-is-answer {
+  background-image: url("assets/icons/heart.png");
+}
+
+.icon_responsive-layout {
+  background-image: url("assets/icons/phone.png");
+}
+
+.icon_round-lock-support {
+  background-image: url("assets/icons/bubble.png");
+}
+
+.ico_feel-like-star {
+  background-image: url("assets/icons/star.png");
+}
+
+.icon_facebook {
+  background-image: url("assets/icons/facebook.png");
+}
+
+.icon_google {
+  background-image: url("assets/icons/google+.png");
+}
+
+.icon_twitter {
+  background-image: url("assets/icons/twitter.png");
+}
+
+.icon_in {
+  background-image: url("assets/icons/linkedin.png");
+}
+
+.icon_geo {
+  background-image: url("assets/icons/location.png");
+  background-position: 4px 6px;
+}
+
+.icon_tel {
+  background-image: url("assets/icons/tel.png");
+  background-position: 2px 5px;
+}
+
+.icon_email {
+  background-image: url("assets/icons/mail.png");
+  background-position: 1px 8px;
 }
 
 /*# sourceMappingURL=singolo3.css.map */

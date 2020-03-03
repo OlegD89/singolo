@@ -1,3 +1,10 @@
+.icon-small {
+    min-width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .icon-circle {
     border: solid 2px $color-dark;
     border-radius: 50%;
@@ -7,7 +14,7 @@
     background-position: center;
 }
 
-.icon-circle-min {
+.icon-circle-small {
     border: solid 1px $color-dark-second;
     border-radius: 50%;
     min-width: 29px;
@@ -54,4 +61,19 @@
 
 .icon_in {    
     background-image: url("assets/icons/linkedin.png");
+}
+
+.icon_geo {    
+    background-image: url("assets/icons/location.png");
+    background-position: 4px 6px;
+}
+
+.icon_tel {    
+    background-image: url("assets/icons/tel.png");
+    background-position: 2px 5px;
+}
+
+.icon_email {    
+    background-image: url("assets/icons/mail.png");
+    background-position: 1px 8px;
 }
