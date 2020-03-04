@@ -23,6 +23,14 @@
     background-position: center;
 }
 
+.icons {
+    display: flex;
+}
+
+.icons > * {
+    margin-left: 9px;
+}
+
 .icon_custom-disign {    
     background-image: url("assets/icons/pen.png");
 }

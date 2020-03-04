@@ -1,0 +1,24 @@
+.contact-information__header {
+    margin-top: 6px;
+    letter-spacing: -0.02rem;
+}
+
+.contact-information__text {    
+    margin-top: 7px;
+    line-height: 2.2rem;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.reference {
+    margin: 2px 0 1px;
+    display: flex;
+    align-items: center;
+}
+
+.reference__text {
+    text-decoration: none;
+    color: $color-light-four;
+    font-size: 1.2rem;
+    padding-left: 4px;
+}

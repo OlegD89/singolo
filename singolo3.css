@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .quote__section {
-  padding: 59px 40px 11px 40px;
+  padding: 59px 40px 13px 40px;
 }
 
 .quote__header {
@@ -70,13 +70,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .quote__text {
-  margin: 20px 0;
+  margin: 18px 0 20px;
   font-size: 1.7rem;
   line-height: 3rem;
 }
 
 .quote-description {
-  padding-bottom: 15px;
+  margin-bottom: 35px;
 }
 
 .quote__shadow {
@@ -84,71 +84,23 @@ h1, h2, h3, h4, h5 {
   background-color: #ea676b;
 }
 
-.contact-information__header {
-  margin-top: 5px;
-  letter-spacing: -0.02rem;
+.footer {
+  background-color: #2d303a;
+  color: #666d89;
 }
 
-.contact-information__text {
-  margin-top: 7px;
-  line-height: 2.2rem;
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.reference {
-  margin: 2px 0 1px;
+.footer-context {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  padding: 24px 40px;
 }
 
-.reference__text {
-  text-decoration: none;
-  color: #f0d8d9;
+.copyright {
+  padding: 3px 0 0 3px;
+}
+
+.copyright__text {
   font-size: 1.2rem;
-  padding-left: 4px;
-}
-
-.quote__input::placeholder {
-  color: #f48c8f;
-}
-
-.quote__input, .quote-button {
-  background-color: #d6564f;
-  color: #f48c8f;
-}
-
-.quote__input {
-  font: "Lato", "Open Sans", Verdana, Arial, sans-serif;
-  width: 100%;
-  display: inline-block;
-  border: none;
-  border-radius: 4px;
-  box-sizing: border-box;
-  padding: 10px 0 12px 14px;
-  margin: 9px 0;
-  font-size: 1.2rem;
-  letter-spacing: -0.02rem;
-}
-
-textarea.quote__input {
-  resize: none;
-  letter-spacing: -0.15rem;
-}
-
-.quote__input:focus {
-  outline: none;
-}
-
-.quote-button {
-  display: inline-block;
-  padding: 10px 30px;
-  border-radius: 4px;
-}
-
-.quote-button:hover {
-  cursor: pointer;
-  background-color: #9b2a24;
 }
 
 .icon-small {
@@ -174,6 +126,14 @@ textarea.quote__input {
   height: 29px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.icons {
+  display: flex;
+}
+
+.icons > * {
+  margin-left: 9px;
 }
 
 .icon_custom-disign {
@@ -229,6 +189,73 @@ textarea.quote__input {
 .icon_email {
   background-image: url("assets/icons/mail.png");
   background-position: 1px 8px;
+}
+
+.contact-information__header {
+  margin-top: 6px;
+  letter-spacing: -0.02rem;
+}
+
+.contact-information__text {
+  margin-top: 7px;
+  line-height: 2.2rem;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.reference {
+  margin: 2px 0 1px;
+  display: flex;
+  align-items: center;
+}
+
+.reference__text {
+  text-decoration: none;
+  color: #f0d8d9;
+  font-size: 1.2rem;
+  padding-left: 4px;
+}
+
+.quote__input::placeholder {
+  color: #f48c8f;
+}
+
+.quote__input, .quote-button {
+  background-color: #d6564f;
+  color: #f48c8f;
+}
+
+.quote__input {
+  font: "Lato", "Open Sans", Verdana, Arial, sans-serif;
+  width: 100%;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 11px 0 13px 14px;
+  margin: 8px 0;
+  font-size: 1.2rem;
+  letter-spacing: -0.02rem;
+}
+
+textarea.quote__input {
+  resize: none;
+  letter-spacing: -0.15rem;
+}
+
+.quote__input:focus {
+  outline: none;
+}
+
+.quote-button {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 4px;
+}
+
+.quote-button:hover {
+  cursor: pointer;
+  background-color: #9b2a24;
 }
 
 /*# sourceMappingURL=singolo3.css.map */

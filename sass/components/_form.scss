@@ -1,0 +1,45 @@
+.quote__input::placeholder {
+    color: $color-additional-lighter;
+}
+
+.quote__input, .quote-button {
+    background-color: $color-additional-darker;
+    color: $color-additional-lighter;
+}
+
+.quote__input {
+    font: $font;
+    width: 100%;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 11px 0 13px 14px;
+    margin: 8px 0;
+    font-size: 1.2rem;
+    letter-spacing: -0.02rem;
+}
+
+textarea.quote__input {
+    resize: none;
+    letter-spacing: -0.15rem;
+}
+
+// textarea.quote__input::placeholder:nth-child() {
+//     font-size: 3rem;
+// }
+
+.quote__input:focus {
+    outline: none;
+}
+
+.quote-button {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 4px;
+}
+
+.quote-button:hover {
+    cursor: pointer;
+    background-color: darken($color: $color-additional-darker, $amount: 20%)
+}
