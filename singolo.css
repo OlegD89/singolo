@@ -35,6 +35,7 @@ h1, h2, h3, h4, h5, p {
 
 .wrapper {
   max-width: 1020px;
+  margin: auto;
 }
 
 .layout-3-columns {
