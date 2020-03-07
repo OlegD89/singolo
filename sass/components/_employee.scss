@@ -1,7 +1,6 @@
 
 .empolyee__name {
     margin:10px 0 9px;
-    letter-spacing: -0.05rem;
     @include limit-line()
 }
 .employee__description {
@@ -16,12 +15,12 @@
 .employee__contacts {
     display: flex;
     >*{
-        margin-right: 9px;
+        margin-right: 8px;
     }
 }
 
 .employee__icon:hover {
     border-color: $color-dark;
     background-color: darken($color: $color-light-second, $amount: 20%);
-    cursor: pointer;  
+    @extend %transition;  
 }

@@ -16,7 +16,7 @@
 
 .navigation-link__text:hover {
     color: $color-additional;
-    cursor: pointer;
+    @extend %transition;
 }
 
 .navigation-link_active {

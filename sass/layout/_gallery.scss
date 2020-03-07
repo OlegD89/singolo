@@ -17,7 +17,7 @@
 .gallery__tag:hover {
     border-color: $color-light-three;
     color: $color-light-three;
-    cursor: pointer;  
+    @extend %transition;  
 }
 
 //Image
@@ -27,49 +27,49 @@
 }
 .gallery-image_1 {    
     background-image: url("assets/images/Project_1.png");
-    background-position: -6px -11px;
+    background-position: -5px -12px;
 }
 .gallery-image_2 {    
     background-image: url("assets/images/Project_2.png");
-    background-position: -81px -43px;
+    background-position: -79px -44px;
 }
 .gallery-image_3 {    
-    background-image: url("assets/images/Project_3.png");;
-    background-position: -10px -1px;
+    background-image: url("assets/images/Project_3.png");
+    background-position: -9px -2px;
 }
 .gallery-image_4 {    
     background-image: url("assets/images/Project_4.png");
-    background-position: -24px -2px;
+    background-position: -23px -3px;
 }
 .gallery-image_5 {    
     background-image: url("assets/images/Project_5.png");
-    background-position: -8px -16px;
+    background-position: -7px -17px;
 }
 .gallery-image_6 {    
     background-image: url("assets/images/Project_6.png");
-    background-position: -15px -4px;
+    background-position: -14px -5px;
 }
 .gallery-image_7 {    
     background-image: url("assets/images/Project_7.png");
-    background-position: -30px -39px;
+    background-position: -29px -40px;
 }
 .gallery-image_8 {    
     background-image: url("assets/images/Project_8.png");
-    background-position: -24px -32px;
+    background-position: -23px -33px;
 }
 .gallery-image_9 {    
     background-image: url("assets/images/Project_9.png");
-    background-position: -14px -2px;
+    background-position: -13px -3px;
 }
 .gallery-image_10 {    
     background-image: url("assets/images/Project_10.png");
-    background-position: -140px -113px;
+    background-position: -138px -114px;
 }
 .gallery-image_11 {    
     background-image: url("assets/images/Project_11.png");
-    background-position: -143px -175px;
+    background-position: -142px -176px;
 }
 .gallery-image_12 {    
     background-image: url("assets/images/Project_12.png");
-    background-position: -36px -60px;
+    background-position: -35px -61px;
 }

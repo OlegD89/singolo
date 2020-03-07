@@ -1,11 +1,11 @@
 //Phone
 .phone__base {
     border-radius: 28px;
-    z-index: 5;
+    z-index: 3;
 }
 
 .phone__screen {
-    z-index: 3;
+    z-index: 5;
 }
 
 .vertical-phone {
@@ -25,7 +25,7 @@
     position: absolute;
     left: 14px;
     top: 65px;
-    background-position: -12px -134px;
+    background-position: -11px -134px;
 }
 
 //Horizontal phone
@@ -45,5 +45,5 @@
     position: absolute;
     left: -59px;
     top: 135px;
-    background-position: -127px -118px;
+    background-position: -125px -118px;
 }
