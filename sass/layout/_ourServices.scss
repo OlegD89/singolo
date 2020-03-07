@@ -1,33 +1,48 @@
-.our__services {    
+.our-services {    
     background-color: $color-light-second
 }
 
-.services {
-    margin-top: 15px;
+.services-content {
+    padding-top: 59px;
+    margin: 0px 40px 10px 40px;
 }
 
-.services__wrapper > * {    
-    margin: 0 12px 0 40px;
+.services-description {
+    margin-bottom: 16px;
 }
 
-.services__description__layout {
-    padding-top: 60px;
-    margin-bottom: 30px;
-    margin-right: 40px;
-}
-
-.services__header {
+.services-description__header {
     font-size: 3rem;
-    letter-spacing: 0.05rem;
-    margin-bottom: 0;
-    margin-top: 0;
+    letter-spacing: 0.02rem;
+    margin-bottom: 18px;
+    font-weight: 700;
+    color: $color-dark-second;
 }
 
-.services__description {    
+.services-description__text {    
     line-height: 3rem;
+    color: $color-dark-three;
 }
+
+
+
+//Services
+
+// .services {
+//     margin-top: 15px;
+// }
+
+// .services-content > * {    
+//     margin: 0 12px 0 40px;
+// }
+
+// .services-description {
+//     padding-top: 60px;
+//     margin-bottom: 30px;
+//     margin-right: 40px;
+// }
     
-.services_shadow {
-    height: 10px;
-    background-color: $color-shadow-three;
-}
+// .services_shadow {
+//     height: 10px;
+//     background-color: $color-shadow-three;
+// }

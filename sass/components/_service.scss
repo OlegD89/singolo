@@ -2,22 +2,24 @@
 
 .service {
     display: flex;
-    margin-top: 15px;
+    margin-top: 28px;
 }
 
+.icon-circle {
+    margin-top: 3px;
+}
 
-.service__description {
+.service-description {
     margin-left: 20px;
-    margin-right: 15px;
 }
 
-.service__description > h3 {
-    margin-top: 0;
-    margin-bottom: 0;
+.service-description > h3 {
+    letter-spacing: -0.02rem;
 }
 
-.service__description > p {
+.service-description > p {
     font-size: 1.2rem;
+    text-align: justify;
     line-height: 2.2rem;
     margin-top: 7px;
     overflow: hidden;
@@ -25,4 +27,8 @@
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+ }
+
+ .service-description__header_round-lock-support {
+    word-spacing: -0.15rem;
  }

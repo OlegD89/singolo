@@ -1,4 +1,4 @@
-
+//Phone
 .phone__base {
     border-radius: 28px;
     z-index: 5;
@@ -8,41 +8,42 @@
     z-index: 3;
 }
 
-.vertical__phone {
+.vertical-phone {
     position: relative;
     left: -107px;
 }
 
-.vertical__phone__base {    
+//Vertical phone
+.vertical-phone__base {    
     box-shadow: 26px 26px 0px rgba(0,0,0,0.2);
 }
 
-.vertical__phone__screen {
+.vertical-phone__screen {
     background: url("assets/images/screen2.jpg") no-repeat;
     width: 188px;
     height: 333px;
     position: absolute;
     left: 14px;
     top: 65px;
-    background-position: -14px -133px;
+    background-position: -13px -134px;
 }
 
-
-.horizontal__phone {    
+//Horizontal phone
+.horizontal-phone {    
     position: relative;
     left: -44px;
 }
-.horizontal__phone__base {
+.horizontal-phone__base {
     transform: rotate(90deg);
     box-shadow: 26px -26px 0px rgba(0,0,0,0.2);
 }
 
-.horizontal__phone__screen {
+.horizontal-phone__screen {
     background: url("assets/images/screen1.jpg") no-repeat;
-    width: 333px;
-    height: 188px;
+    width: 334px;
+    height: 189px;
     position: absolute;
-    left: -61px;
+    left: -59px;
     top: 135px;
-    background-position: -125px -118px;
+    background-position: -124px -118px;
 }

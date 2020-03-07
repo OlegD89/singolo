@@ -3,113 +3,270 @@
     <meta charset="UTF8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SINGLO</title>
-    <link rel="stylesheet" href="singolo1.css">
+    <link rel="stylesheet" href="singolo.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="fonts.css">
 </head>
 <body>
     <header class="header">
-        <div class="wrapper header__wrapper flex">
-            <div class="logo header__logo">
-                <a href="#" class="logo__link"><h1 class="logo_text">SINGOLO</h1><span class="logo_copyright">*</span></a>
-            </div>
-            <div class="header__navigation">
-                <ul class="navigation flex">
-                    <li class="navigation__link"><span class="navigation_link_text link_active">Home</span></li>
-                    <li class="navigation__link"><span class="navigation_link_text">Services</span></li>
-                    <li class="navigation__link"><span class="navigation_link_text">Portfolio</span></li>
-                    <li class="navigation__link"><span class="navigation_link_text">About</span></li>
-                    <li class="navigation__link"><span class="navigation_link_text">Contact</span></li>
-                </ul>
+        <div class="wrapper">
+            <div class="header-content flex">
+                <div class="logo">
+                    <a href="#" class="logo__link">
+                        <h1 class="logo__text">SINGOLO</h1>
+                        <span class="logo__footnote">*</span>
+                    </a>
+                </div>
+                <nav class="header-navigation">
+                    <ul class="navigation flex">
+                        <li class="navigation-link"><span class="navigation-link__text navigation-link">Home</span></li>
+                        <li class="navigation-link"><span class="navigation-link__text">Services</span></li>
+                        <li class="navigation-link"><span class="navigation-link__text">Portfolio</span></li>
+                        <li class="navigation-link"><span class="navigation-link__text">About</span></li>
+                        <li class="navigation-link"><span class="navigation-link__text">Contact</span></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-        <div class="header_shadow"></div>
     </header>
     <main>
-        <section class="visual__content">
-            <div class="wrapper visual_content_form">
-                <div class="visual__content__wrapper flex">
-                    <span class="navigation__icon navigation_left"></span>
-                    <div class="vertical__phone">
-                        <span class="phone__screen vertical__phone__screen"></span>
-                        <img class="phone__base vertical__phone__base" src="./assets/images/phone.png" alt="Телефон расположенный вертикально">
+        <section class="visual">
+            <div class="wrapper">
+                <div class="visual-content flex">
+                    <span class="navigation__icon navigation__icon_left"></span>
+                    <div class="phone vertical-phone">
+                        <span class="phone__screen vertical-phone__screen"></span>
+                        <img class="phone__base vertical-phone__base" src="./assets/images/phone.png" alt="Телефон расположенный вертикально">
                     </div>
-                    <div class="horizontal__phone">
-                        <span class="phone__screen horizontal__phone__screen"></span>
-                        <img class="phone__base horizontal__phone__base" src="./assets/images/phone.png" alt="Телефон расположенный горизонтально">
+                    <div class="phone horizontal-phone">
+                        <span class="phone__screen horizontal-phone__screen"></span>
+                        <img class="phone__base horizontal-phone__base" src="./assets/images/phone.png" alt="Телефон расположенный горизонтально">
                     </div>
-                    <span class="navigation__icon navigation_right"></span>
+                    <span class="navigation__icon navigation__icon_right"></span>
                 </div>
             </div>
-            <div class="visual_content_shadow"></div>
         </section>
-        <section class="our__services">
-            <div class="wrapper services__wrapper">
-                <div class="services__description__layout">
-                    <h2 class="services__header">
-                        Our Services
-                    </h2>
-                    <p class="services__description">
-                        Bighead carp pelican gulper denticle herring featherfin knifefish amur pike bamboo shark northern anchovy kuhli loach. Spinefoot; mullet sleeper wrasse, redside icefish eelpout.
-                    </p>
-                </div>
-                <div class="layout-3-columns services">
-                    <div class="service">
-                        <span class="icon-circle icon_custom-disign"></span>
-                        <div class="service__description">
-                            <h3>Custom Design</h3>
-                            <p>
-                                Broadband dogfish ling aruana Ragfish; river shark, splitfin, bichir armored gurnard warty. Broadband dogfish ling aruana Ragfish; river shark, splitfin, bichir armored gurnard warty
-                            </p>
-                        </div>
+        <section class="our-services">
+            <div class="wrapper">
+                <div class="services-content">
+                    <div class="services-description">
+                        <h2 class="services-description__header">
+                            Our Services
+                        </h2>
+                        <p class="services-description__text">
+                            Bighead carp pelican gulper denticle herring featherfin knifefish amur pike bamboo shark northern anchovy kuhli loach. Spinefoot; mullet sleeper wrasse, redside icefish eelpout.
+                        </p>
                     </div>
-                    <div class="service">
-                        <span class="icon-circle icon_inovative-ideas"></span>
-                        <div class="service__description">
-                            <h3>Inovative Ideas</h3>
-                            <p>
-                                Mahi-mahi wels catfish grouper; pickerel emperor grunt sculpin: barbeled dragonfish slender mola
-                            </p>
+                    <div class="layout-3-columns services">
+                        <div class="service">
+                            <span class="icon-circle icon_custom-disign"></span>
+                            <div class="service-description">
+                                <h3>Custom Design</h3>
+                                <p>
+                                    Broadband dogfish ling aruana Ragfish; river shark, splitfin, bichir armored gurnard warty. Broadband dogfish ling aruana Ragfish; river shark, splitfin, bichir armored gurnard warty
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="service">
-                        <span class="icon-circle icon_love-is-answer"></span>
-                        <div class="service__description">
-                            <h3>Love Is The Answer</h3>
-                            <p>
-                                Loach catfish surf sardine crestfish, barracuda mora paperbone shark northern sea inconnu arapaima
-                            </p>
+                        <div class="service">
+                            <span class="icon-circle icon_inovative-ideas"></span>
+                            <div class="service-description">
+                                <h3>Inovative Ideas</h3>
+                                <p>
+                                    Mahi-mahi wels catfish grouper; pickerel emperor grunt sculpin: barbeled dragonfish slender mola
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="service">
-                        <span class="icon-circle icon_responsive-layout"></span>
-                        <div class="service__description">
-                            <h3>Responsive Layout</h3>
-                            <p>
-                                Neon tetra three spot gourami starry flounder dorab prickleback candiru duckbill eel weeverfish black 
-                            </p>
+                        <div class="service">
+                            <span class="icon-circle icon_love-is-answer"></span>
+                            <div class="service-description">
+                                <h3>Love Is The Answer</h3>
+                                <p>
+                                    Loach catfish surf sardine crestfish, barracuda mora paperbone shark northern sea inconnu arapaima
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="service">
-                        <span class="icon-circle icon_round-lock-support"></span>
-                        <div class="service__description">
-                            <h3>24 / 7 Support</h3>
-                            <p>
-                                Scaly dragonfish antenna codlet luderick barracuda, kelp perch sea bass Oriental loach blackfish pilot fish
-                            </p>
+                        <div class="service">
+                            <span class="icon-circle icon_responsive-layout"></span>
+                            <div class="service-description">
+                                <h3>Responsive Layout</h3>
+                                <p>
+                                    Neon tetra three spot gourami starry flounder dorab prickleback candiru duckbill eel weeverfish black 
+                                </p>
+                            </div>
                         </div>
-                    </div><div class="service">
-                        <span class="icon-circle ico_feel-like-star"></span>
-                        <div class="service__description">
-                            <h3>Feel Like A Star</h3>
-                            <p>
-                                Buri shortnose sucker California halibut Pacific lamprey freshwater flyingfish roundhead mako
-                            </p>
+                        <div class="service">
+                            <span class="icon-circle icon_round-lock-support"></span>
+                            <div class="service-description">
+                                <h3 class="service-description__header_round-lock-support">24 / 7 Support</h3>
+                                <p>
+                                    Scaly dragonfish antenna codlet luderick barracuda, kelp perch sea bass Oriental loach blackfish pilot fish
+                                </p>
+                            </div>
+                        </div><div class="service">
+                            <span class="icon-circle ico_feel-like-star"></span>
+                            <div class="service-description">
+                                <h3>Feel Like A Star</h3>
+                                <p>
+                                    Buri shortnose sucker California halibut Pacific lamprey freshwater flyingfish roundhead mako
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>            
             <div class="services_shadow"></div>
         </section>
+        <section class="portfolio">
+            <div class="wrapper">
+              <div class="portfolio__section">
+                <div class="portfolio-description">
+                  <h2 class="portfolio-description__header header">
+                    Portfolio
+                  </h2>
+                  <p class="portfolio-description__text">
+                    Ropefish naked-back knifefish zebra trout roach Red whalefish longjaw mudsucker sea bream. 
+                  </p>
+                </div>
+                <div class="gallery">
+                  <div class="gallery-filters">
+                    <span class="tag gallery__tag tag_all tag_ative">All</span>
+                    <span class="tag gallery__tag tag_web">Web Design</span>
+                    <span class="tag gallery__tag tag_graphic">Graphic Design</span>
+                    <span class="tag gallery__tag tag_art">Artwork</span>
+                  </div>
+                  <div class="gallery-images layout-4-columns">
+                    <a href="#" class="gallery-image gallery-image_1"></a>
+                    <a href="#" class="gallery-image gallery-image_2"></a>
+                    <a href="#" class="gallery-image gallery-image_3"></a>
+                    <a href="#" class="gallery-image gallery-image_4"></a>
+                    <a href="#" class="gallery-image gallery-image_5"></a>
+                    <a href="#" class="gallery-image gallery-image_6"></a>
+                    <a href="#" class="gallery-image gallery-image_7"></a>
+                    <a href="#" class="gallery-image gallery-image_8"></a>
+                    <a href="#" class="gallery-image gallery-image_9"></a>
+                    <a href="#" class="gallery-image gallery-image_10"></a>
+                    <a href="#" class="gallery-image gallery-image_11"></a>
+                    <a href="#" class="gallery-image gallery-image_12"></a>
+                    <a href="#" class="gallery-image gallery-image_11"></a>
+                    <a href="#" class="gallery-image gallery-image_10"></a>
+                  </div>
+                </div>
+              </div>
+            </div>   
+            <div class="portfolio_shadow"></div>
+          </section>
+          <section class="about-us">
+            <div class="wrapper">
+              <div class="about-us__section">
+                <div class="about-us-description about-us__description">
+                  <h2 class="about-us-description__header header">
+                    About Us
+                  </h2>
+                  <p class="about-us-description__text">
+                    Ghoul fangtooth lagena ocean sunfish regal whiptail catfish zebra turkeyfish handfish silverside, brook trout. Ribbonbearer wels catfish, zebra tilapia: finback cat shark, shortnose greeneye Pacific salmon temperate ocean-bass.
+                  </p>
+                </div>
+                <div class="staff layout-3-columns">
+                  <div class="employee">
+                    <img src="../assets/images/photo AJ.png" alt="photo Adam Jensen" class="photo">
+                    <h3 class="empolyee__name">Adam Jensen</h3>
+                    <p class="employee__description">Molly Miller righteye flounder yellow weaver mudfish medaka </p>
+                    <div class="employee__contacts">
+                      <span class="employee__icon icon-circle-small icon_facebook"></span>
+                      <span class="employee__icon icon-circle-small icon_google"></span>
+                      <span class="employee__icon icon-circle-small icon_twitter"></span>
+                      <span class="employee__icon icon-circle-small icon_in"></span>
+                    </div>
+                  </div>
+                  <div class="employee">
+                    <img src="../assets/images/photo DM.png" alt="photo Desmond Miles" class="photo">
+                    <h3 class="empolyee__name">Desmond Miles</h3>
+                    <p class="employee__description">New Zealand sand diver, clingfish, sawfish dab boga</p>
+                    <div class="employee__contacts">
+                      <span class="employee__icon icon-circle-small icon_facebook"></span>
+                      <span class="employee__icon icon-circle-small icon_google"></span>
+                      <span class="employee__icon icon-circle-small icon_twitter"></span>
+                      <span class="employee__icon icon-circle-small icon_in"></span>
+                    </div>
+                  </div>
+                  <div class="employee">
+                    <img src="../assets/images/photo SV.png" alt="photo Scolara Visari" class="photo">
+                    <h3 class="empolyee__name">Scolara Visari</h3>
+                    <p class="employee__description">Pink salmon dorado merluccid hake longjaw mudsucker spotted danio: nurseryfish--Manta Ray false cat shark slipmouth. Bango fierasfer spearfish shortnose chimaera catfish snook rocket danio, redlip blenny yellow-edged moray</p>
+                    <div class="employee__contacts">
+                      <span class="employee__icon icon-circle-small icon_facebook"></span>
+                      <span class="employee__icon icon-circle-small icon_google"></span>
+                      <span class="employee__icon icon-circle-small icon_twitter"></span>
+                      <span class="employee__icon icon-circle-small icon_in"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about-us__shadow"></div>
+          </section>
+          <section class="quote">
+            <div class="wrapper">
+                <div class="quote__section">
+                    <div class="quote-description">
+                        <h2 class="quote__header">
+                            Get a Quote
+                        </h2>
+                        <p class="quote__text">
+                            Black sea bass, Japanese eel brown trout Redfish Long-finned sand diver. Spiderfish electric stargazer titan triggerfish spiny-back batfish salmon shark southern Dolly Varden convict blenny. 
+                        </p>
+                    </div>
+                    <div class="layout-2-columns-two-thirds">
+                        <div class="quote__form">
+                            <form action method="POST">
+                                <input type="text" class="quote__input" name="name" value="Name (Required)" required>
+                                <input type="email" class="quote__input" name="email" placeholder="Email (Required)" required>
+                                <input type="text" class="quote__input" name="subject" placeholder="Subject">
+                                <!-- <p> -->
+                                <textarea class="quote__input" name="describe" cols="30" rows="13" placeholder="Describe your project in detail..."></textarea>
+                                <!-- </p> -->
+                                <button type="submit" class="button quote-button">Send</button>
+                            </form>
+                        </div>
+                        <div class="contact-information">
+                            <h3 class="contact-information__header">
+                                Contact information
+                            </h3>
+                            <p class="contact-information__text">
+                                Tenpounder, masu salmon; sawfish catfish pumpkinseed freshwater shark Black prickleback squaretail walleye speckled trout. Batfish salmon shark southern Dolly Varden convict blenny. 
+                            </p>
+                            <p class="reference">
+                                <span class="icon-small icon_geo"></span>
+                                <a class="reference__text" href="geo:30.087361, -97.501445">Elm St. 14/05 Lost City</a>
+                            </p>
+                            <p class="reference">
+                                <span class="icon-small icon_tel"></span>
+                                <a class="reference__text" href="tel:035283318635">03528 331 86 35</a>
+                            </p>
+                            <p class="reference">
+                                <span class="icon-small icon_email"></span>
+                                <a class="reference__text" href="mailto:info@singolo.com">info@singolo.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="quote__shadow"></div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer-context">
+                <div class="copyright">
+                    <span class="copyright__text">&copy;Copyrirht 2013</span>
+                </div>
+                <div class="icons">                    
+                    <span class="icon-circle-small icon_facebook"></span>
+                    <span class="icon-circle-small icon_google"></span>
+                    <span class="icon-circle-small icon_twitter"></span>
+                    <span class="icon-circle-small icon_in"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
