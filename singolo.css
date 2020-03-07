@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, p {
 
 .visual-content {
   align-items: center;
-  padding: 52px 45px;
+  padding: 52px 40px 52px 42px;
 }
 
 .navigation__icon {
@@ -158,6 +158,7 @@ h1, h2, h3, h4, h5, p {
 .gallery-filters {
   display: flex;
   justify-content: flex-start;
+  margin-left: 3px;
 }
 
 .gallery__tag {
@@ -177,62 +178,62 @@ h1, h2, h3, h4, h5, p {
 
 .gallery-image_1 {
   background-image: url("assets/images/Project_1.png");
-  background-position: -10px -12px;
+  background-position: -6px -11px;
 }
 
 .gallery-image_2 {
   background-image: url("assets/images/Project_2.png");
-  background-position: -84px -44px;
+  background-position: -81px -43px;
 }
 
 .gallery-image_3 {
   background-image: url("assets/images/Project_3.png");
-  background-position: -12px -2px;
+  background-position: -10px -1px;
 }
 
 .gallery-image_4 {
   background-image: url("assets/images/Project_4.png");
-  background-position: -25px -3px;
+  background-position: -24px -2px;
 }
 
 .gallery-image_5 {
   background-image: url("assets/images/Project_5.png");
-  background-position: -12px -17px;
+  background-position: -8px -16px;
 }
 
 .gallery-image_6 {
   background-image: url("assets/images/Project_6.png");
-  background-position: -18px -5px;
+  background-position: -15px -4px;
 }
 
 .gallery-image_7 {
   background-image: url("assets/images/Project_7.png");
-  background-position: -32px -40px;
+  background-position: -30px -39px;
 }
 
 .gallery-image_8 {
   background-image: url("assets/images/Project_8.png");
-  background-position: -25px -33px;
+  background-position: -24px -32px;
 }
 
 .gallery-image_9 {
   background-image: url("assets/images/Project_9.png");
-  background-position: -18px -3px;
+  background-position: -14px -2px;
 }
 
 .gallery-image_10 {
   background-image: url("assets/images/Project_10.png");
-  background-position: -143px -114px;
+  background-position: -140px -113px;
 }
 
 .gallery-image_11 {
   background-image: url("assets/images/Project_11.png");
-  background-position: -145px -176px;
+  background-position: -143px -175px;
 }
 
 .gallery-image_12 {
   background-image: url("assets/images/Project_12.png");
-  background-position: -37px -61px;
+  background-position: -36px -60px;
 }
 
 .about-us {
@@ -377,7 +378,7 @@ h1, h2, h3, h4, h5, p {
   position: absolute;
   left: 14px;
   top: 65px;
-  background-position: -13px -134px;
+  background-position: -12px -134px;
 }
 
 .horizontal-phone {
@@ -397,7 +398,7 @@ h1, h2, h3, h4, h5, p {
   position: absolute;
   left: -59px;
   top: 135px;
-  background-position: -124px -118px;
+  background-position: -127px -118px;
 }
 
 .service {
