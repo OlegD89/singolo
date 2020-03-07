@@ -1,29 +1,28 @@
 .about-us {
     background-color: $color-light-second;
     color: $color-dark-second;
+    border-bottom: 6px solid $color-light
 }
 
 .about-us__section {
-    padding: 59px 40px;
-    margin-bottom: 10px;
+    padding: 59px 41px 67px 38px;
 }
 
 .about-us-description__header {
     font-size: 3.0rem;
-    margin: 0 0 18px;
+    margin-bottom: 18px;
     font-weight: 800;
+    letter-spacing: -0.02rem;
 }
 .about-us-description__text {
     font-size: 1.8rem;
+    text-align: justify;
     line-height: 3.0rem;
     color: $color-dark-three;
     font-weight: 300;
+    margin-bottom: 18px;
 }
 
 .about-us__description {
     padding-bottom: 27px;
-}
-.about-us__shadow {
-    height: 4px;
-    background-color: $color-light;
 }

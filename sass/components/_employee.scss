@@ -8,6 +8,7 @@
     font-size: 1.2rem;
     line-height: 2.0rem;
     letter-spacing: 0.05rem;
+    text-align: justify;
     margin: 0 0 25px;
     min-height: 40px;
     @include limit-lines(2)
