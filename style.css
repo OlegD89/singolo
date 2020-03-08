@@ -5,6 +5,7 @@
 
 html {
   font-size: 10px;
+  font-family: "Lato", "Open Sans", Verdana, Arial, sans-serif;
 }
 
 body {
@@ -313,7 +314,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 .copyright {
-  padding: 3px 0 0 3px;
+  padding: 5px 0 0 7px;
 }
 
 .copyright__text {
@@ -554,6 +555,10 @@ h1, h2, h3, h4, h5, p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  letter-spacing: -0.03rem;
+}
+.empolyee__name.empolyee__name_sv {
+  letter-spacing: 0;
 }
 
 .employee__description {
@@ -648,4 +653,4 @@ textarea.quote__input {
   background-color: #9b2a24;
 }
 
-/*# sourceMappingURL=singolo.css.map */
+/*# sourceMappingURL=style.css.map */

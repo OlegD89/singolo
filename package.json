@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "style" : "sass --watch sass/style.scss singolo.css",
+    "style" : "sass --watch sass/style.scss style.css",
     "style1" : "sass --watch sass/style1.scss singolo1.css",
     "style2" : "sass --watch sass/style2.scss singolo2.css",
     "style3" : "sass --watch sass/style3.scss singolo3.css",
