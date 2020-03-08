@@ -3,9 +3,9 @@
     <meta charset="UTF8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SINGLO</title>
-    <link rel="stylesheet" href="singolo.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="fonts.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="fonts.css">
 </head>
 <body>
     <header class="header">
@@ -19,7 +19,7 @@
                 </div>
                 <nav class="header-navigation">
                     <ul class="navigation flex">
-                        <li class="navigation-link"><span class="navigation-link__text navigation-link">Home</span></li>
+                        <li class="navigation-link"><span class="navigation-link__text navigation-link_active">Home</span></li>
                         <li class="navigation-link"><span class="navigation-link__text">Services</span></li>
                         <li class="navigation-link"><span class="navigation-link__text">Portfolio</span></li>
                         <li class="navigation-link"><span class="navigation-link__text">About</span></li>
@@ -189,7 +189,7 @@
                   </div>
                   <div class="employee">
                     <img src="assets/images/photo SV.png" alt="photo Scolara Visari" class="photo">
-                    <h3 class="empolyee__name">Scolara Visari</h3>
+                    <h3 class="empolyee__name empolyee__name_sv">Scolara Visari</h3>
                     <p class="employee__description">Pink salmon dorado merluccid hake longjaw mudsucker spotted danio: nurseryfish--Manta Ray false cat shark slipmouth. Bango fierasfer spearfish shortnose chimaera catfish snook rocket danio, redlip blenny yellow-edged moray</p>
                     <div class="employee__contacts">
                       <span class="employee__icon icon-circle-small icon_facebook"></span>
@@ -216,10 +216,10 @@
                     <div class="layout-2-columns-two-thirds">
                         <div class="quote__form">
                             <form action method="POST">
-                                <input type="text" class="quote__input" name="name" value="Name (Required)" required>
+                                <input type="text" class="quote__input" name="name" placeholder="Name (Required)" required>
                                 <input type="email" class="quote__input" name="email" placeholder="Email (Required)" required>
                                 <input type="text" class="quote__input" name="subject" placeholder="Subject">
-                                <textarea class="quote__input" name="describe" cols="30" rows="13" placeholder="Describe your project in detail..."></textarea>
+                                <textarea class="quote__input" name="describe" cols="30" rows="12" placeholder="Describe your project in detail..."></textarea>
                                 <button type="submit" class="button quote-button">Send</button>
                             </form>
                         </div>
