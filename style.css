@@ -1,4 +1,4 @@
-.employee__icon:hover, .icon-circle-small:hover, .navigation-link__text:hover, .gallery__tag:hover, .navigation__icon:hover {
+.employee__icon:hover, .icon-circle-small:hover, .navigation-link__text:hover, .gallery-image, .gallery__tag:hover, .navigation__icon:hover {
   transition: all 0.3s ease-out;
   cursor: pointer;
 }
@@ -183,6 +183,9 @@ h1, h2, h3, h4, h5, p {
 .gallery-image {
   height: 187px;
   background-repeat: no-repeat;
+}
+.gallery-image_active {
+  border: 5px solid #f06c64;
 }
 
 .gallery-image_1 {

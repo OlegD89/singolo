@@ -24,6 +24,10 @@
 .gallery-image {
     height: 187px;
     background-repeat: no-repeat;
+    @extend %transition;  
+    &_active{
+        border: 5px solid $color-additional;
+    }
 }
 .gallery-image_1 {    
     background-image: url("src/assets/images/Project_1.png");
