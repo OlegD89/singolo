@@ -14,9 +14,13 @@
     color: $color-light;
 }
 
-.navigation-link__text:hover {
-    color: $color-additional;
-    @extend %transition;
+.navigation-link__text {
+    text-decoration: none;
+    color: $color-light;
+    &:hover {
+        color: $color-additional;
+        @extend %transition;
+    }
 }
 
 .navigation-link_active {
