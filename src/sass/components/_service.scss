@@ -1,0 +1,37 @@
+
+
+.service {
+    display: flex;
+    margin-top: 28px;
+}
+
+.icon-circle {
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.service-description {
+    margin-left: 20px;
+}
+
+.service-description > h3 {
+    letter-spacing: -0.02rem;
+    color: $color-dark-second;
+}
+
+.service-description > p {
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 2.2rem;
+    color: $color-dark-three;
+    margin-top: 7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+ }
+
+ .service-description__header_round-lock-support {
+    word-spacing: -0.15rem;
+ }

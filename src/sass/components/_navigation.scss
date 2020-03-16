@@ -1,0 +1,28 @@
+
+.navigation-link {
+    color: $color-light;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin: 20px 0px 20px 29px;
+}
+
+.navigation .navigation-link:first-child {
+    list-style: none;
+}
+
+.navigation-link {
+    color: $color-light;
+}
+
+.navigation-link__text {
+    text-decoration: none;
+    color: $color-light;
+    &:hover {
+        color: $color-additional;
+        @extend %transition;
+    }
+}
+
+.navigation-link_active {
+    color: $color-additional;
+}
