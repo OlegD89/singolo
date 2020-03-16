@@ -1,12 +1,13 @@
 window.onload = function() {
-    console.log('run script')
-
     document.querySelector('.navigation').addEventListener('click', clickNavigation)
     document.querySelector('.visual-content').addEventListener('click', clickPhoneNavigation)
     document.querySelector('.visual-content').addEventListener('click', clickPhone)
     document.querySelector('.gallery-filters').addEventListener('click', clickGalleryFilters)
     document.querySelector('.gallery-images').addEventListener('click', clickGalleryImage)
+    document.querySelector('.quote-button').addEventListener('click', clickQuoteButton)
+    document.querySelector('.overlay_modal-quote').addEventListener('click', clickModal)
 }
+
 //#region Header
 const clickNavigation = (e) => {
     changeActive(e, 'navigation-link__text', 'navigation-link_active');
@@ -74,6 +75,42 @@ const clickGalleryImage = (e) => {
 }
 //#endregion Portfolio
 
+//#region Quote
+const clickQuoteButton = (e) => {
+    setQuoteTheme();
+    setQuoteDesc();
+    showQuoteModal();
+
+    e.preventDefault();
+}
+
+const clickModal = (e) => {
+    if(e.target.classList.contains('modal-quote__button-ok') || 
+        e.target.classList.contains('overlay')){
+        hideQuoteModal();
+    }
+}
+
+const setQuoteTheme = (e) => {
+    let modalTheme = document.querySelector('.modal-quote__theme');
+    let theme = document.querySelector('.quote__subject');
+    modalTheme.innerHTML = theme.value?`Тема: ${theme.value}`:'Без темы';
+}
+const setQuoteDesc = (e) => {
+    let modalDesc = document.querySelector('.modal-quote__desc');
+    let desc = document.querySelector('.quote__describe');
+    modalDesc.innerHTML = desc.value?`Описание: ${desc.value}`:'Без описания';
+}
+const showQuoteModal = (e) => {
+    let modal = document.querySelector('.overlay_modal-quote');
+    modal.classList.remove('modal_hidden');
+}
+const hideQuoteModal = (e) => {
+    let modal = document.querySelector('.overlay_modal-quote');
+    modal.classList.add('modal_hidden');
+}
+
+//#endregion Quote
 
 //#region Base
 const changeActive = (e, classElement, classActiveElement, success) => {
