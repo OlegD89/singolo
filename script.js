@@ -31,14 +31,23 @@ const clickPhone = (e) => {
 const changePhoneScreen = (isLeft) => {
     let screens = document.querySelectorAll('.phone__screen');
     screens.forEach(screen => {
-        //если будет больше двух изображений, то необходимо будет смотреть в какую сторону листать
-        if(screen.classList.contains('phone__screen-1')){
-            screen.classList.remove('phone__screen-1');
-            screen.classList.add('phone__screen-2');
+        let currentNumberScreen = screen.classList.contains('phone__screen-1') ? 1 : 
+            screen.classList.contains('phone__screen-2') ? 2 : 3;
+
+        screen.classList.remove('phone__screen-' + currentNumberScreen);
+        let nextNumber;
+        if(isLeft){
+            nextNumber = currentNumberScreen - 1;
+            if(nextNumber === 0){
+                nextNumber = 3;
+            }
         }else{
-            screen.classList.remove('phone__screen-2');
-            screen.classList.add('phone__screen-1');
+            nextNumber = currentNumberScreen + 1;
+            if(nextNumber === 4){
+                nextNumber = 1;
+            }
         }
+        screen.classList.add('phone__screen-' + nextNumber);
     })
 }
 
