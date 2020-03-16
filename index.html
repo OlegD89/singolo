@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="fonts.css">
 </head>
 <body>
-    <header class="header">
+    <header id="header" class="header">
         <div class="wrapper">
             <div class="header-content flex">
                 <div class="logo">
@@ -19,11 +19,11 @@
                 </div>
                 <nav class="header-navigation">
                     <ul class="navigation flex">
-                        <li class="navigation-link"><span class="navigation-link__text navigation-link_active">Home</span></li>
-                        <li class="navigation-link"><span class="navigation-link__text">Services</span></li>
-                        <li class="navigation-link"><span class="navigation-link__text">Portfolio</span></li>
-                        <li class="navigation-link"><span class="navigation-link__text">About</span></li>
-                        <li class="navigation-link"><span class="navigation-link__text">Contact</span></li>
+                        <li class="navigation-link"><a href="#header" class="navigation-link__text navigation-link_active">Home</a></li>
+                        <li class="navigation-link"><a href="#services" class="navigation-link__text">Services</a></li>
+                        <li class="navigation-link"><a href="#portfolio" class="navigation-link__text">Portfolio</a></li>
+                        <li class="navigation-link"><a href="#about" class="navigation-link__text">About</a></li>
+                        <li class="navigation-link"><a href="#contact" class="navigation-link__text">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -35,18 +35,18 @@
                 <div class="visual-content flex">
                     <span class="navigation__icon navigation__icon_left"></span>
                     <div class="phone vertical-phone">
-                        <span class="phone__screen vertical-phone__screen"></span>
-                        <img class="phone__base vertical-phone__base" src="./assets/images/phone.png" alt="Телефон расположенный вертикально">
+                        <span class="phone__screen vertical-phone__screen phone__screen-2"></span>
+                        <img class="phone__base vertical-phone__base" src="./src/assets/images/phone.png" alt="Телефон расположенный вертикально">
                     </div>
                     <div class="phone horizontal-phone">
-                        <span class="phone__screen horizontal-phone__screen"></span>
-                        <img class="phone__base horizontal-phone__base" src="./assets/images/phone.png" alt="Телефон расположенный горизонтально">
+                        <span class="phone__screen horizontal-phone__screen phone__screen-1"></span>
+                        <img class="phone__base horizontal-phone__base" src="./src/assets/images/phone.png" alt="Телефон расположенный горизонтально">
                     </div>
                     <span class="navigation__icon navigation__icon_right"></span>
                 </div>
             </div>
         </section>
-        <section class="our-services">
+        <section id="services" class="our-services">
             <div class="wrapper">
                 <div class="services-content">
                     <div class="services-description">
@@ -115,7 +115,7 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section id="portfolio" class="portfolio">
             <div class="wrapper">
               <div class="portfolio__section">
                 <div class="portfolio-description">
@@ -134,26 +134,26 @@
                     <span class="tag gallery__tag tag_art">Artwork</span>
                   </div>
                   <div class="gallery-images layout-4-columns">
-                    <a href="#" class="gallery-image gallery-image_1"></a>
-                    <a href="#" class="gallery-image gallery-image_2"></a>
-                    <a href="#" class="gallery-image gallery-image_3"></a>
-                    <a href="#" class="gallery-image gallery-image_4"></a>
-                    <a href="#" class="gallery-image gallery-image_5"></a>
-                    <a href="#" class="gallery-image gallery-image_6"></a>
-                    <a href="#" class="gallery-image gallery-image_7"></a>
-                    <a href="#" class="gallery-image gallery-image_8"></a>
-                    <a href="#" class="gallery-image gallery-image_9"></a>
-                    <a href="#" class="gallery-image gallery-image_10"></a>
-                    <a href="#" class="gallery-image gallery-image_11"></a>
-                    <a href="#" class="gallery-image gallery-image_12"></a>
-                    <a href="#" class="gallery-image gallery-image_11"></a>
-                    <a href="#" class="gallery-image gallery-image_10"></a>
+                    <span class="gallery-image gallery-image_1"></span>
+                    <span class="gallery-image gallery-image_2"></span>
+                    <span class="gallery-image gallery-image_3"></span>
+                    <span class="gallery-image gallery-image_4"></span>
+                    <span class="gallery-image gallery-image_5"></span>
+                    <span class="gallery-image gallery-image_6"></span>
+                    <span class="gallery-image gallery-image_7"></span>
+                    <span class="gallery-image gallery-image_8"></span>
+                    <span class="gallery-image gallery-image_9"></span>
+                    <span class="gallery-image gallery-image_10"></span>
+                    <span class="gallery-image gallery-image_11"></span>
+                    <span class="gallery-image gallery-image_12"></span>
+                    <span class="gallery-image gallery-image_11"></span>
+                    <span class="gallery-image gallery-image_10"></span>
                   </div>
                 </div>
               </div>
             </div>   
           </section>
-          <section class="about-us">
+          <section id="about" class="about-us">
             <div class="wrapper">
               <div class="about-us__section">
                 <div class="about-us-description about-us__description">
@@ -166,7 +166,7 @@
                 </div>
                 <div class="staff layout-3-columns">
                   <div class="employee">
-                    <img src="assets/images/photo AJ.png" alt="photo Adam Jensen" class="photo">
+                    <img src="src/assets/images/photo AJ.png" alt="photo Adam Jensen" class="photo">
                     <h3 class="empolyee__name">Adam Jensen</h3>
                     <p class="employee__description">Molly Miller righteye flounder yellow weaver mudfish medaka </p>
                     <div class="employee__contacts">
@@ -177,7 +177,7 @@
                     </div>
                   </div>
                   <div class="employee">
-                    <img src="assets/images/photo DM.png" alt="photo Desmond Miles" class="photo">
+                    <img src="src/assets/images/photo DM.png" alt="photo Desmond Miles" class="photo">
                     <h3 class="empolyee__name">Desmond Miles</h3>
                     <p class="employee__description">New Zealand sand diver, clingfish, sawfish dab boga</p>
                     <div class="employee__contacts">
@@ -188,7 +188,7 @@
                     </div>
                   </div>
                   <div class="employee">
-                    <img src="assets/images/photo SV.png" alt="photo Scolara Visari" class="photo">
+                    <img src="src/assets/images/photo SV.png" alt="photo Scolara Visari" class="photo">
                     <h3 class="empolyee__name empolyee__name_sv">Scolara Visari</h3>
                     <p class="employee__description">Pink salmon dorado merluccid hake longjaw mudsucker spotted danio: nurseryfish--Manta Ray false cat shark slipmouth. Bango fierasfer spearfish shortnose chimaera catfish snook rocket danio, redlip blenny yellow-edged moray</p>
                     <div class="employee__contacts">
@@ -214,16 +214,16 @@
                         </p>
                     </div>
                     <div class="layout-2-columns-two-thirds">
-                        <div class="quote__form">
-                            <form action method="POST">
-                                <input type="text" class="quote__input" name="name" placeholder="Name (Required)" required>
-                                <input type="email" class="quote__input" name="email" placeholder="Email (Required)" required>
-                                <input type="text" class="quote__input" name="subject" placeholder="Subject">
-                                <textarea class="quote__input" name="describe" cols="30" rows="12" placeholder="Describe your project in detail..."></textarea>
+                        <div>
+                            <form action class="quote__form" method="POST">
+                                <input type="text" class="quote__input" name="name" placeholder="Name (Required)" ><!-- required -->
+                                <input type="email" class="quote__input" name="email" placeholder="Email (Required)"><!-- required -->
+                                <input type="text" class="quote__input quote__subject" name="subject" placeholder="Subject">
+                                <textarea class="quote__input quote__describe" name="describe" cols="30" rows="12" placeholder="Describe your project in detail..."></textarea>
                                 <button type="submit" class="button quote-button">Send</button>
                             </form>
                         </div>
-                        <div class="contact-information">
+                        <div id="contact" class="contact-information">
                             <h3 class="contact-information__header">
                                 Contact information
                             </h3>
@@ -246,6 +246,16 @@
                     </div>
                 </div>
             </div>
+            <div class="overlay overlay_modal-quote modal_hidden">
+                <div class="modal modal-quote">
+                    <b>Письмо отправлено</b>
+                    <hr/>
+                    <p class="modal-quote__theme">Тема:</p>
+                    <p class="modal-quote__desc">Описание:</p>
+                    <br/>
+                    <button class="modal-quote__button-ok">OK</button>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -263,4 +273,5 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
