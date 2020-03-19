@@ -1,5 +1,9 @@
 window.onload = function() {
+    let scrollMarginTopStr = 
+        getComputedStyle(document.querySelector('.scroll-href')).scrollMarginTop;
+    let scrollMarginTop = Number(scrollMarginTopStr.substr(0,scrollMarginTopStr.length-2));
     document.querySelector('.navigation').addEventListener('click', clickNavigation)
+    document.addEventListener('scroll', (e) => onScroll(e, scrollMarginTop));
     document.querySelector('.visual-content').addEventListener('click', clickPhoneNavigation)
     document.querySelector('.visual-content').addEventListener('click', clickPhone)
     document.querySelector('.gallery-filters').addEventListener('click', clickGalleryFilters)
@@ -11,6 +15,29 @@ window.onload = function() {
 //#region Header
 const clickNavigation = (e) => {
     changeActive(e, 'navigation-link__text', 'navigation-link_active');
+}
+
+const onScroll = (e, scrollMarginTop) => {
+    let currentPosition = window.scrollY;
+    let header = document.querySelector('.header-content');
+    let isHeaderSmall = header.classList.contains('header-content_small');
+    if(currentPosition==0 && isHeaderSmall){
+        header.classList.remove('header-content_small');
+    }else if(currentPosition>0 && !isHeaderSmall){
+        header.classList.add('header-content_small');
+    }
+
+    let anchors = document.querySelectorAll('.anchor');
+    let navigationLinks = document.querySelectorAll('.navigation-link>a');
+    for(let i=0; i<anchors.length; i++){
+        if(currentPosition + scrollMarginTop < anchors[i].offsetTop + anchors[i].offsetHeight){
+            if(!navigationLinks[i].classList.contains('navigation-link_active')){
+                document.querySelector('.navigation-link_active').classList.remove('navigation-link_active');
+                setActive(navigationLinks[i], 'navigation-link_active');
+            }
+            return;
+        }
+    }
 }
 //#endregion Header
 
