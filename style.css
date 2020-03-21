@@ -66,11 +66,12 @@ html {
   width: 100%;
   min-width: 1020px;
   background-color: #2d303a;
-  border-bottom: 6px solid #323746;
+  border-bottom: 6px solid #020202;
 }
 
 .header-content {
-  height: 89px;
+  height: 54px;
+  padding-bottom: 21px;
   margin: 0 38px 0 41px;
   align-items: center;
   transition: all 0.3s ease-out;
@@ -78,10 +79,11 @@ html {
 
 .header-content_small {
   height: 40px;
+  padding-bottom: 0;
 }
 
 .header-navigation {
-  margin-top: 12px;
+  margin-top: 15px;
 }
 
 .wrapper {
@@ -124,15 +126,23 @@ html {
 }
 
 .visual {
-  height: 594px;
+  padding-top: 80px;
+}
+
+.background-visual_first {
   background-color: #f06c64;
   border-bottom: 6px solid #ea676b;
-  padding-top: 95px;
+}
+
+.background-visual_second {
+  background-color: #648bf0;
+  border-bottom: 6px solid #3057bb;
 }
 
 .visual-content {
+  height: 595px;
   align-items: center;
-  padding: 52px 40px 52px 42px;
+  padding: 0 40px 0 45px;
 }
 
 .navigation__icon {
@@ -181,11 +191,11 @@ html {
 .portfolio {
   background-color: #2d303a;
   color: #666d89;
-  border-bottom: 6px solid #323746;
+  border-bottom: 6px solid #020202;
 }
 
 .portfolio__section {
-  padding: 60px 38px 57px 38px;
+  padding: 60px 38px 66px 38px;
 }
 
 .portfolio-description {
@@ -231,7 +241,7 @@ html {
   background-repeat: no-repeat;
 }
 .gallery-image_active {
-  border: 5px solid #f06c64;
+  outline: 5px solid #f06c64;
 }
 
 .gallery-image_1 {
@@ -422,11 +432,12 @@ html {
 
 .phone__screen {
   z-index: 5;
+  background-repeat: no-repeat;
 }
 
 .vertical-phone {
   position: relative;
-  left: -107px;
+  left: -183px;
 }
 
 .vertical-phone__base {
@@ -444,7 +455,7 @@ html {
 
 .horizontal-phone {
   position: relative;
-  left: -44px;
+  left: 36px;
 }
 
 .horizontal-phone__base {
@@ -456,24 +467,38 @@ html {
   width: 334px;
   height: 189px;
   position: absolute;
-  left: -59px;
+  left: -62px;
   top: 135px;
   background-position: -125px -118px;
 }
 
 .phone__screen-1 {
-  background: url("src/assets/images/screen1.jpg") no-repeat;
+  background-image: url("src/assets/images/screen1.jpg");
 }
 
 .phone__screen-2 {
-  background: url("src/assets/images/screen2.jpg") no-repeat;
+  background-image: url("src/assets/images/screen2.jpg");
 }
 
 .phone__screen-3 {
-  background: url("src/assets/images/screen3.jpg") no-repeat;
+  background-image: url("src/assets/images/screen3.jpg");
 }
 
 .phone__screen-off {
+  display: none;
+}
+
+.slide_first {
+  padding: 54px 0 56px 0;
+}
+
+.slide__second {
+  background: url("./src/assets/images/slide2.png") center no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.slide_hidden {
   display: none;
 }
 
@@ -537,6 +562,7 @@ html {
   border-radius: 50%;
   min-width: 55px;
   height: 55px;
+  margin-left: 2px;
   background-repeat: no-repeat;
   background-position: center;
 }

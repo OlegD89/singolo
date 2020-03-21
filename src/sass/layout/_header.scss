@@ -9,15 +9,17 @@
   }
 
 .header-content {
-    height: 89px;
+    height: 54px;
+    padding-bottom: 21px;
     margin: 0 38px 0 41px;
     align-items: center;
     transition: all 0.3s ease-out;
 }
 .header-content_small {
     height: 40px;
+    padding-bottom: 0;
 }
 
 .header-navigation {    
-    margin-top: 12px;
+    margin-top: 15px;
 }

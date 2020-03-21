@@ -1,13 +1,21 @@
 .visual {
-    height: 594px;
+    padding-top: 80px;
+}
+
+.background-visual_first {
     background-color: $color-additional;
     border-bottom: 6px solid $color-shadow-second;
-    padding-top: 95px;
+}
+
+.background-visual_second {
+    background-color: $color-another;
+    border-bottom: 6px solid $color-another-darker;
 }
 
 .visual-content {
+    height: 595px;
     align-items: center;
-    padding: 52px 40px 52px 42px;
+    padding: 0 40px 0 45px;
 }
 
 .navigation__icon {

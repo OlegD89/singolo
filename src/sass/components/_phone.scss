@@ -6,11 +6,12 @@
 
 .phone__screen {
     z-index: 5;
+    background-repeat: no-repeat;
 }
 
 .vertical-phone {
     position: relative;
-    left: -107px;
+    left: -183px;
 }
 
 //Vertical phone
@@ -30,7 +31,7 @@
 //Horizontal phone
 .horizontal-phone {    
     position: relative;
-    left: -44px;
+    left: 36px;
 }
 .horizontal-phone__base {
     transform: rotate(90deg);
@@ -41,21 +42,21 @@
     width: 334px;
     height: 189px;
     position: absolute;
-    left: -59px;
+    left: -62px;
     top: 135px;
     background-position: -125px -118px;
 }
 
 .phone__screen-1 {
-    background: url("src/assets/images/screen1.jpg") no-repeat;
+    background-image: url("src/assets/images/screen1.jpg");
 }
 
 .phone__screen-2 {
-    background: url("src/assets/images/screen2.jpg") no-repeat;
+    background-image: url("src/assets/images/screen2.jpg");
 }
 
 .phone__screen-3 {
-    background: url("src/assets/images/screen3.jpg") no-repeat;
+    background-image: url("src/assets/images/screen3.jpg");
 }
 
 .phone__screen-off {
