@@ -45,7 +45,8 @@ const onScroll = (e, scrollMarginTop) => {
 const clickPhoneNavigation = (e) => {
     if(e.target.classList.contains('navigation__icon')){
         let isMoveLeft = e.target.classList.contains('navigation__icon_left');
-        changePhoneScreen(isMoveLeft);
+        // changePhoneScreen(isMoveLeft);
+        chageSlides(isMoveLeft);
     }
 }
 
@@ -76,6 +77,47 @@ const changePhoneScreen = (isLeft) => {
         }
         screen.classList.add('phone__screen-' + nextNumber);
     })
+}
+
+const chageSlides = (isLeft) => {
+    let visual = document.querySelector('#header');
+    let firstIsActive = visual.classList.contains('background-visual_first');
+    if(firstIsActive) {
+        visual.classList.remove('background-visual_first');
+        visual.classList.add('background-visual_second');
+    }else{
+        visual.classList.remove('background-visual_second');
+        visual.classList.add('background-visual_first');
+    }
+    
+    let slides = document.querySelectorAll('.slide');
+    slides.forEach(slide => {
+        if(slide.classList.contains("slide_hidden")){
+            slide.classList.remove("slide_hidden");            
+        }else{
+            slide.classList.add("slide_hidden");
+        }
+        slide.classList.add("slide-to-left");
+    })
+    // screens.forEach(screen => {
+    //     let currentNumberScreen = screen.classList.contains('phone__screen-1') ? 1 : 
+    //         screen.classList.contains('phone__screen-2') ? 2 : 3;
+
+    //     screen.classList.remove('phone__screen-' + currentNumberScreen);
+    //     let nextNumber;
+    //     if(isLeft){
+    //         nextNumber = currentNumberScreen - 1;
+    //         if(nextNumber === 0){
+    //             nextNumber = 3;
+    //         }
+    //     }else{
+    //         nextNumber = currentNumberScreen + 1;
+    //         if(nextNumber === 4){
+    //             nextNumber = 1;
+    //         }
+    //     }
+    //     screen.classList.add('phone__screen-' + nextNumber);
+    // })
 }
 
 const changePhonePower = (phoneBase) => {

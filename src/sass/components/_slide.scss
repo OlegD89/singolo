@@ -1,11 +1,22 @@
-.slide_first {
-    padding: 54px 0 56px 0;
+.slide {    
+    position: absolute;
+    width: calc(100% - 85px);
+    animation: 3.5s ease-in-out;
+}
+.slide__first {
+    padding: 29px 0 56px 0;
 }
 .slide__second {
     background: url('./src/assets/images/slide2.png') center no-repeat;
     height: 100%;
-    width: 100%;
 }
 .slide_hidden {
     display: none;
 }
+.slide-to-left {
+    animation-name: toleft;
+}
+@keyframes toleft {
+    from {left: 0px;}
+    to {left: 100%;}
+  }
