@@ -18,7 +18,14 @@
   justify-content: space-between;
 }
 .layout-4-columns > * {
-    width: 23.5%;
+    margin: 10px;
+    width: calc(25% - 15px);
+    &:nth-child(4n+1){
+        margin-left: 0;
+    }
+    &:nth-child(4n+4){
+        margin-right: 0;
+    }
 }
 
 //двухколоночный 2/3 + 1/3

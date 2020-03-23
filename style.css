@@ -108,7 +108,14 @@ html {
 }
 
 .layout-4-columns > * {
-  width: 23.5%;
+  margin: 10px;
+  width: calc(25% - 15px);
+}
+.layout-4-columns > *:nth-child(4n+1) {
+  margin-left: 0;
+}
+.layout-4-columns > *:nth-child(4n+4) {
+  margin-right: 0;
 }
 
 .layout-2-columns-two-thirds {
@@ -219,9 +226,6 @@ html {
 .gallery-images {
   max-height: 630px;
   overflow: hidden;
-}
-.gallery-images > * {
-  margin-top: 20px;
 }
 
 .gallery-filters {

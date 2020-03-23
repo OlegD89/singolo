@@ -2,9 +2,6 @@
 .gallery-images {
     max-height: 630px;
     overflow: hidden;
-    >* {
-        margin-top: 20px;
-    }
 }
 .gallery-filters {
     display: flex;
