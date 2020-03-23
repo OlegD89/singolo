@@ -23,11 +23,25 @@
 .slide-move-right-to-center {
     animation-name: righttocenter;
 }
+.slide-move-center-to-right {
+    animation-name: centertoright;
+}
+.slide-move-left-to-center {
+    animation-name: lefttocenter;
+}
 @keyframes centertoleft {
     from {left: 0;}
     to {left: -100%;}
   }
 @keyframes righttocenter {
     from {left: 100%;}
+    to {left: 0;}
+  }
+@keyframes centertoright {
+    from {left: 0;}
+    to {left: 100%;}
+  }
+@keyframes lefttocenter {
+    from {left: -100%;}
     to {left: 0;}
   }

@@ -26,8 +26,12 @@ const addEnentPhoneNavigation = () => {
             }else{
                 slide.classList.remove("slide-move-right-to-center");
             }
-
-            slide.classList.remove("slide-to-right");
+            if(slide.classList.contains("slide-move-center-to-right")){
+                slide.classList.remove("slide-move-center-to-right");
+                slide.classList.add("slide_hidden");
+            }else{
+                slide.classList.remove("slide-move-left-to-center");
+            }
     }));
 }
 
@@ -99,6 +103,10 @@ const changePhoneScreen = (isLeft) => {
 }
 
 const chageSlides = (isLeft) => {
+    let move = isLeft ? 
+        {from:'slide-move-center-to-left', to: 'slide-move-right-to-center'} :
+        {from:'slide-move-center-to-right', to: 'slide-move-left-to-center'};
+
     let visual = document.querySelector('#header');
     let firstIsActive = visual.classList.contains('background-visual_first');
     if(firstIsActive) {
@@ -114,11 +122,11 @@ const chageSlides = (isLeft) => {
     slides.forEach(slide => {
         navigations.forEach(navigation => navigation.classList.add('slide-is-moving'));
         if(slide.classList.contains('slide_hidden')){
-            slide.classList.add("slide-move-right-to-center");
+            slide.classList.add(move.to);
             slide.classList.remove("slide_hidden");
         }
         else{
-            slide.classList.add("slide-move-center-to-left");
+            slide.classList.add(move.from);
         }
     })
 }
