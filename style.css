@@ -75,6 +75,7 @@ html {
 
 .header-content {
   height: 54px;
+  width: calc(100% - 79px);
   padding-bottom: 21px;
   margin: 0 38px 0 41px;
   align-items: center;
@@ -125,13 +126,7 @@ html {
 
 .layout-4-columns > * {
   margin: 10px;
-  flex-basis: calc(25% - 15px);
-}
-.layout-4-columns > *:nth-child(4n+1) {
-  margin-left: 0;
-}
-.layout-4-columns > *:nth-child(4n+4) {
-  margin-right: 0;
+  flex-basis: calc(25% - 20px);
 }
 
 .layout-2-columns-two-thirds {
@@ -145,7 +140,7 @@ html {
 }
 
 .layout-2-columns-two-thirds > *:last-child {
-  flex-basis: 32%;
+  flex-basis: 31.7%;
 }
 
 .visual {
@@ -182,14 +177,12 @@ html {
   opacity: 0.25;
   width: 18px;
   height: 28px;
-  margin-top: 25px;
 }
 @media (max-width: 375px) {
   .navigation__icon {
     width: 14px;
     height: 24px;
     background-size: 100%;
-    margin-top: 0;
   }
 }
 
@@ -222,7 +215,7 @@ html {
 .services-description__header {
   font-size: 3rem;
   letter-spacing: 0.02rem;
-  margin-bottom: 18px;
+  margin: 0 0 18px 2px;
   font-weight: 700;
   color: #666d89;
 }
@@ -240,7 +233,7 @@ html {
 }
 
 .portfolio__section {
-  padding: 60px 38px 66px 38px;
+  padding: 60px 28px 56px 28px;
 }
 @media (max-width: 375px) {
   .portfolio__section {
@@ -249,7 +242,7 @@ html {
 }
 
 .portfolio-description {
-  margin-left: 3px;
+  margin-left: 13px;
 }
 @media (max-width: 375px) {
   .portfolio-description {
@@ -270,6 +263,7 @@ html {
 
 .gallery-images {
   max-height: 630px;
+  margin-top: 10px;
   overflow: hidden;
 }
 @media (max-width: 768px) {
@@ -286,7 +280,7 @@ html {
 .gallery-filters {
   display: flex;
   justify-content: flex-start;
-  margin-left: 3px;
+  margin-left: 16px;
 }
 @media (max-width: 375px) {
   .gallery-filters {
@@ -312,27 +306,17 @@ html {
 }
 @media (max-width: 768px) {
   .gallery-image {
-    flex-basis: calc(33% - 15px);
-  }
-  .gallery-image:nth-child(n+1) {
+    flex-basis: calc(33% - 18px);
     margin: 10px;
-  }
-  .gallery-image:nth-child(3n+1) {
-    margin-left: 0;
-  }
-  .gallery-image:nth-child(3n+3) {
-    margin-right: 0;
   }
 }
 @media (max-width: 375px) {
   .gallery-image {
+    margin: 7px;
     background-repeat: no-repeat;
     height: 100%;
     position: relative;
     flex-basis: calc(50% - 14px);
-  }
-  .gallery-image:nth-child(n+1) {
-    margin: 7px;
   }
   .gallery-image:before {
     content: "";
@@ -471,7 +455,7 @@ html {
 }
 
 .about-us__section {
-  padding: 59px 38px 66px 40px;
+  padding: 59px 38px 68px 40px;
 }
 @media (max-width: 375px) {
   .about-us__section {
@@ -481,7 +465,7 @@ html {
 
 .about-us-description__header {
   font-size: 3rem;
-  margin-bottom: 18px;
+  margin: 0 0 18px 3px;
   font-weight: 800;
   letter-spacing: -0.02rem;
 }
@@ -523,6 +507,7 @@ html {
 .quote__header {
   font-size: 3rem;
   font-weight: 700;
+  margin-left: 2px;
 }
 
 .quote__text {
@@ -721,7 +706,7 @@ html {
 
 .horizontal-phone__screen {
   width: 333px;
-  height: 189px;
+  height: 188px;
   position: absolute;
   left: -62px;
   top: 135px;
@@ -999,6 +984,10 @@ html {
   background-position: 1px 8px;
 }
 
+.staff {
+  margin-left: 2px;
+}
+
 @media (max-width: 375px) {
   .employee {
     flex-basis: 100%;
@@ -1163,12 +1152,17 @@ textarea.quote__input {
   left: 0;
 }
 
+nav.menu-mobile_hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
 @media (max-width: 375px) {
-  .navigation-mobile {
+  .menu-mobile {
     transition: all 0.7s ease-out;
   }
 
-  .navigation-mobile > .layout {
+  .menu-mobile > .layout {
     position: fixed;
     left: 0;
     width: 80%;
@@ -1177,28 +1171,23 @@ textarea.quote__input {
     box-shadow: 10px -10px 0px rgba(0, 0, 0, 0.2);
   }
 
-  .navigation-mobile-list {
+  .menu-mobile__navigation {
     flex-direction: column;
     list-style-type: none;
     margin-top: 100px;
   }
 
-  .navigation-mobile-list > .navigation-link {
+  .menu-mobile__navigation > .navigation-link {
     margin: 15px;
   }
 
-  .navigation-mobile-list > .navigation-link > .navigation-link__text {
+  .menu-mobile__navigation > .navigation-link > .navigation-link__text {
     font-size: 2.4rem;
   }
 
-  .navigation-mobile__header {
+  .menu-mobile__header {
     display: flex;
     margin-top: 15px;
-  }
-
-  nav.navigation-mobile_hidden {
-    visibility: hidden;
-    opacity: 0;
   }
 }
 

@@ -7,7 +7,7 @@ window.onload = function() {
     document.addEventListener('scroll', (e) => onScroll(e, scrollMarginTop));
     document.querySelector('.header__mobile > .header__hamburger')
         .addEventListener('click', clickOpenNavigation);
-    document.querySelector('.navigation-mobile').addEventListener('click', clickCloseNavigation);
+    document.querySelector('.menu-mobile').addEventListener('click', clickCloseNavigation);
     addEnentPhoneNavigation();
     document.querySelector('.visual-content').addEventListener('click', clickPhone)
     document.querySelector('.gallery-filters').addEventListener('click', clickGalleryFilters)
@@ -71,13 +71,13 @@ const onScroll = (e, scrollMarginTop) => {
 }
 
 const clickOpenNavigation = (e) => {
-    let blockNavigation = document.querySelector('.navigation-mobile');
-    blockNavigation.classList.remove('navigation-mobile_hidden');
+    let blockNavigation = document.querySelector('.menu-mobile');
+    blockNavigation.classList.remove('menu-mobile_hidden');
 }
 
 const clickCloseNavigation = (e) => {
     if(!e.target.classList.contains('layout'))
-        e.currentTarget.classList.add('navigation-mobile_hidden');
+        e.currentTarget.classList.add('menu-mobile_hidden');
 }
 //#endregion Header
 

@@ -1,3 +1,7 @@
+.staff {
+    margin-left: 2px;
+}
+
 .employee {
     @include media-mobile {
         flex-basis: 100%;

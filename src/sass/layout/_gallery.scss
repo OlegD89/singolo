@@ -1,18 +1,19 @@
 //Images
 .gallery-images {
     max-height: 630px;
+    margin-top: 10px;
+    overflow: hidden;
     @include media-tablet {
         max-height: 830px;
     }
     @include media-mobile {
         max-height: 630px;
     }
-    overflow: hidden;
 }
 .gallery-filters {
     display: flex;
     justify-content: flex-start;
-    margin-left: 3px;
+    margin-left: 16px;
     @include media-mobile {
         margin: 0 7px 18px 7px;
     }
@@ -35,21 +36,11 @@
         outline: 5px solid $color-additional;
     }
     @include media-tablet {
-        flex-basis: calc(33% - 15px);
-        &:nth-child(n+1){
-            margin: 10px;
-        }
-        &:nth-child(3n+1){
-            margin-left: 0;
-        }
-        &:nth-child(3n+3){
-            margin-right: 0;
-        }
+        flex-basis: calc(33% - 18px);
+        margin: 10px;
     }
     @include media-mobile {
-        &:nth-child(n+1){
-            margin: 7px;
-        }
+        margin: 7px;
         background-repeat: no-repeat;
         height: 100%;
         position: relative;
