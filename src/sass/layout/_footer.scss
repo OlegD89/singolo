@@ -6,11 +6,18 @@
 .footer-context {
     display: flex;
     justify-content: space-between;
-    padding: 21px 39px 22px 37px;
+    padding: 22px 39px 22px 37px;
+    @include media-mobile {
+        padding: 22px 0 22px 0;
+        justify-content: center;
+    }
 }
 
 .copyright {
     padding: 5px 0 0 7px;
+    @include media-mobile {
+        display: none;
+    }
 }
 
 .copyright__text {

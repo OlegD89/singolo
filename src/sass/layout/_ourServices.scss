@@ -5,6 +5,9 @@
 
 .services-content {
     padding: 59px 40px 61px 40px;
+    @include media-mobile {
+        padding: 30px;
+    }
 }
 
 .services-description {

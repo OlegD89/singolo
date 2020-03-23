@@ -3,13 +3,23 @@
     position: absolute;
     width: calc(100% - 85px);
     animation: 3.5s ease-in-out;
+    @include media-mobile {
+        margin: 0 20px;
+    }
 }
 .slide__first {
     padding: 29px 0 56px 0;
+    @include media-mobile {
+        padding: 0;
+    }
 }
 .slide__second {
     background: url('./src/assets/images/slide2.png') center no-repeat;
     height: 100%;
+    background-size: 120%;
+    @include media-mobile {
+        width: calc(100% - 40px);
+    }
 }
 .slide_hidden {
     display: none;

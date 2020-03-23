@@ -6,6 +6,9 @@
 
 .about-us__section {
     padding: 59px 38px 66px 40px;
+    @include media-mobile {
+        padding: 30px;
+    }
 }
 
 .about-us-description__header {

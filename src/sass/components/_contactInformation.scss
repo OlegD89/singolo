@@ -1,6 +1,9 @@
 .contact-information__header {
     margin: 6px 0 8px;
     letter-spacing: -0.02rem;
+    @include media-mobile {
+        margin-top: 32px;
+    }
 }
 
 .contact-information__text {    

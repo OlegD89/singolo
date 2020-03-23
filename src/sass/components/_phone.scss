@@ -5,21 +5,38 @@
     @include media-tablet {
         width: 150px;
     }
+    @include media-mobile {
+        width: 80px;
+        border-radius: 10px;
+    }
 }
 
 .phone__screen {
     z-index: 5;
     background-repeat: no-repeat;
+    background-size: 580px;
+    @include media-tablet {
+        background-size: 480px;
+    }
+    @include media-mobile {
+        background-size: 260px;
+    }
 }
 
 .vertical-phone {
     position: relative;
     left: 24px;
+    @include media-mobile {
+        left: 20px;
+    }
 }
 
 //Vertical phone
 .vertical-phone__base {    
     box-shadow: 26px 26px 0px rgba(0,0,0,0.2);
+    @include media-mobile {
+        box-shadow: 10px 10px 0px rgba(0,0,0,0.2);
+    }
 }
 
 .vertical-phone__screen {
@@ -28,12 +45,18 @@
     position: absolute;
     left: 14px;
     top: 65px;
-    background-position: -11px -134px;
+    background-position: -14px -135px;
     @include media-tablet {
         width: 131px;
         height: 232px;
         left: 10px;
         top: 45px;
+    }
+    @include media-mobile {
+        width: 71px;
+        height: 232px;
+        left: 5px;
+        top: 24px;
     }
 }
 
@@ -44,24 +67,36 @@
     @include media-tablet {
         right: 112px;
     }
+    @include media-mobile {
+        right: 20px;
+    }
 }
 .horizontal-phone__base {
     transform: rotate(90deg);
     box-shadow: 26px -26px 0px rgba(0,0,0,0.2);
+    @include media-mobile {
+        box-shadow: 10px -10px 0px rgba(0,0,0,0.2);
+    }
 }
 
 .horizontal-phone__screen {
-    width: 334px;
+    width: 333px;
     height: 189px;
     position: absolute;
     left: -62px;
     top: 135px;
-    background-position: -125px -118px;
+    background-position: -125px -119px;
     @include media-tablet {
         width: 232px;
         height: 131px;
         left: -43px;
         top: 94px;
+    }
+    @include media-mobile {
+        width: 125px;
+        height: 71px;
+        left: -23px;
+        top: 50px;
     }
 }
 
