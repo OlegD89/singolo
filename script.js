@@ -2,8 +2,12 @@ window.onload = function() {
     let scrollMarginTopStr = 
         getComputedStyle(document.querySelector('.scroll-href')).scrollMarginTop;
     let scrollMarginTop = Number(scrollMarginTopStr.substr(0,scrollMarginTopStr.length-2));
-    document.querySelector('.navigation').addEventListener('click', clickNavigation)
+    document.querySelectorAll('.navigation').forEach(nav=>
+        nav.addEventListener('click', clickNavigation));
     document.addEventListener('scroll', (e) => onScroll(e, scrollMarginTop));
+    document.querySelector('.header__mobile > .header__hamburger')
+        .addEventListener('click', clickOpenNavigation);
+    document.querySelector('.navigation-mobile').addEventListener('click', clickCloseNavigation);
     addEnentPhoneNavigation();
     document.querySelector('.visual-content').addEventListener('click', clickPhone)
     document.querySelector('.gallery-filters').addEventListener('click', clickGalleryFilters)
@@ -52,15 +56,28 @@ const onScroll = (e, scrollMarginTop) => {
 
     let anchors = document.querySelectorAll('.anchor');
     let navigationLinks = document.querySelectorAll('.navigation-link>a');
+    const navigationLinksUnique = 5;
     for(let i=0; i<anchors.length; i++){
         if(currentPosition + scrollMarginTop < anchors[i].offsetTop + anchors[i].offsetHeight){
             if(!navigationLinks[i].classList.contains('navigation-link_active')){
-                document.querySelector('.navigation-link_active').classList.remove('navigation-link_active');
+                document.querySelectorAll('.navigation-link_active').forEach(linkActive=>
+                    linkActive.classList.remove('navigation-link_active'));
                 setActive(navigationLinks[i], 'navigation-link_active');
+                setActive(navigationLinks[i+navigationLinksUnique], 'navigation-link_active');
             }
             return;
         }
     }
+}
+
+const clickOpenNavigation = (e) => {
+    let blockNavigation = document.querySelector('.navigation-mobile');
+    blockNavigation.classList.remove('navigation-mobile_hidden');
+}
+
+const clickCloseNavigation = (e) => {
+    if(!e.target.classList.contains('layout'))
+        e.currentTarget.classList.add('navigation-mobile_hidden');
 }
 //#endregion Header
 

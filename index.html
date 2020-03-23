@@ -10,24 +10,52 @@
 <body>
     <header class="header">
         <div class="wrapper">
-            <div class="header-content flex">
-                <div class="logo">
-                    <a href="#" class="logo__link">
-                        <h1 class="logo__text">SINGOLO</h1>
-                        <span class="logo__footnote">*</span>
-                    </a>
+            <div class="header__mobile">
+                <span class="header__hamburger hamburger">
+                    <span class="hamburger__line"></span>
+                </span>
+                <div class="header-content flex">
+                    <div class="logo">
+                        <a href="#" class="logo__link">
+                            <h1 class="logo__text">SINGOLO</h1>
+                            <span class="logo__footnote">*</span>
+                        </a>
+                    </div>
+                    <nav class="header-navigation">
+                        <ul class="navigation flex">
+                            <li class="navigation-link"><a href="#header" class="navigation-link__text navigation-link_active">Home</a></li>
+                            <li class="navigation-link"><a href="#services" class="navigation-link__text">Services</a></li>
+                            <li class="navigation-link"><a href="#portfolio" class="navigation-link__text">Portfolio</a></li>
+                            <li class="navigation-link"><a href="#about" class="navigation-link__text">About</a></li>
+                            <li class="navigation-link"><a href="#contact" class="navigation-link__text">Contact</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="header-navigation">
-                    <ul class="navigation flex">
-                        <li class="navigation-link"><a href="#header" class="navigation-link__text navigation-link_active">Home</a></li>
-                        <li class="navigation-link"><a href="#services" class="navigation-link__text">Services</a></li>
-                        <li class="navigation-link"><a href="#portfolio" class="navigation-link__text">Portfolio</a></li>
-                        <li class="navigation-link"><a href="#about" class="navigation-link__text">About</a></li>
-                        <li class="navigation-link"><a href="#contact" class="navigation-link__text">Contact</a></li>
-                    </ul>
-                </nav>
             </div>
         </div>
+        
+        <nav class="navigation-mobile overlay navigation-mobile_hidden">
+            <div class="layout">
+                <div class="navigation-mobile__header">
+                    <span class="header__hamburger hamburger hamburger_opened">
+                        <span class="hamburger__line"></span>
+                    </span>
+                    <div class="logo">
+                        <a href="#" class="logo__link">
+                            <h1 class="logo__text">SINGOLO</h1>
+                            <span class="logo__footnote">*</span>
+                        </a>
+                    </div>
+                </div>
+                <ul class="navigation navigation-mobile-list flex">
+                    <li class="navigation-link"><a href="#header" class="navigation-link__text navigation-link_active">Home</a></li>
+                    <li class="navigation-link"><a href="#services" class="navigation-link__text">Services</a></li>
+                    <li class="navigation-link"><a href="#portfolio" class="navigation-link__text">Portfolio</a></li>
+                    <li class="navigation-link"><a href="#about" class="navigation-link__text">About</a></li>
+                    <li class="navigation-link"><a href="#contact" class="navigation-link__text">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
         <section id="header" class="visual anchor background-visual_first">
