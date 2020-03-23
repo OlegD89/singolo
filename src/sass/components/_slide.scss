@@ -1,4 +1,5 @@
 .slide {    
+    margin: 0 40px 0 45px;
     position: absolute;
     width: calc(100% - 85px);
     animation: 3.5s ease-in-out;
@@ -13,10 +14,20 @@
 .slide_hidden {
     display: none;
 }
-.slide-to-left {
-    animation-name: toleft;
+.slide-is-moving {
+    pointer-events: none;
 }
-@keyframes toleft {
-    from {left: 0px;}
-    to {left: 100%;}
+.slide-move-center-to-left {
+    animation-name: centertoleft;
+}
+.slide-move-right-to-center {
+    animation-name: righttocenter;
+}
+@keyframes centertoleft {
+    from {left: 0;}
+    to {left: -100%;}
+  }
+@keyframes righttocenter {
+    from {left: 100%;}
+    to {left: 0;}
   }

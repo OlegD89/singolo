@@ -127,6 +127,7 @@ html {
 
 .visual {
   padding-top: 80px;
+  transition: all 3.5s ease-out;
 }
 
 .background-visual_first {
@@ -142,8 +143,9 @@ html {
 .visual-content {
   height: 595px;
   align-items: center;
-  padding: 0 40px 0 45px;
+  margin: 0 40px 0 45px;
   position: relative;
+  overflow-x: hidden;
 }
 
 .navigation__icon {
@@ -438,7 +440,7 @@ html {
 
 .vertical-phone {
   position: relative;
-  left: 69px;
+  left: 24px;
 }
 
 .vertical-phone__base {
@@ -456,7 +458,7 @@ html {
 
 .horizontal-phone {
   position: relative;
-  left: -216px;
+  left: -176px;
 }
 
 .horizontal-phone__base {
@@ -490,6 +492,7 @@ html {
 }
 
 .slide {
+  margin: 0 40px 0 45px;
   position: absolute;
   width: calc(100% - 85px);
   animation: 3.5s ease-in-out;
@@ -508,16 +511,32 @@ html {
   display: none;
 }
 
-.slide-to-left {
-  animation-name: toleft;
+.slide-is-moving {
+  pointer-events: none;
 }
 
-@keyframes toleft {
+.slide-move-center-to-left {
+  animation-name: centertoleft;
+}
+
+.slide-move-right-to-center {
+  animation-name: righttocenter;
+}
+
+@keyframes centertoleft {
   from {
-    left: 0px;
+    left: 0;
   }
   to {
+    left: -100%;
+  }
+}
+@keyframes righttocenter {
+  from {
     left: 100%;
+  }
+  to {
+    left: 0;
   }
 }
 .service {

@@ -1,5 +1,6 @@
 .visual {
     padding-top: 80px;
+    transition: all 3.5s ease-out;
 }
 
 .background-visual_first {
@@ -15,8 +16,9 @@
 .visual-content {
     height: 595px;
     align-items: center;
-    padding: 0 40px 0 45px;
+    margin: 0 40px 0 45px;
     position: relative;
+    overflow-x: hidden;
 }
 
 .navigation__icon {

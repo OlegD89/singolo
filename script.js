@@ -4,12 +4,31 @@ window.onload = function() {
     let scrollMarginTop = Number(scrollMarginTopStr.substr(0,scrollMarginTopStr.length-2));
     document.querySelector('.navigation').addEventListener('click', clickNavigation)
     document.addEventListener('scroll', (e) => onScroll(e, scrollMarginTop));
-    document.querySelector('.visual-content').addEventListener('click', clickPhoneNavigation)
+    addEnentPhoneNavigation();
     document.querySelector('.visual-content').addEventListener('click', clickPhone)
     document.querySelector('.gallery-filters').addEventListener('click', clickGalleryFilters)
     document.querySelector('.gallery-images').addEventListener('click', clickGalleryImage)
     document.querySelector('.quote-button').addEventListener('click', clickQuoteButton)
     document.querySelector('.overlay_modal-quote').addEventListener('click', clickModal)
+}
+
+const addEnentPhoneNavigation = () => {
+    document.querySelector('.visual-content').addEventListener('click', clickPhoneNavigation)
+    let navigations = document.querySelectorAll('.navigation__icon');
+    let slides = document.querySelectorAll('.slide');
+    slides.forEach(slide=>
+        slide.addEventListener('animationend', (e) => {
+            let slide = e.currentTarget;
+            navigations.forEach(navigation => navigation.classList.remove('slide-is-moving'));
+            if(slide.classList.contains("slide-move-center-to-left")){
+                slide.classList.remove("slide-move-center-to-left");
+                slide.classList.add("slide_hidden");
+            }else{
+                slide.classList.remove("slide-move-right-to-center");
+            }
+
+            slide.classList.remove("slide-to-right");
+    }));
 }
 
 //#region Header
@@ -90,34 +109,18 @@ const chageSlides = (isLeft) => {
         visual.classList.add('background-visual_first');
     }
     
+    let navigations = document.querySelectorAll('.navigation__icon');
     let slides = document.querySelectorAll('.slide');
     slides.forEach(slide => {
-        if(slide.classList.contains("slide_hidden")){
-            slide.classList.remove("slide_hidden");            
-        }else{
-            slide.classList.add("slide_hidden");
+        navigations.forEach(navigation => navigation.classList.add('slide-is-moving'));
+        if(slide.classList.contains('slide_hidden')){
+            slide.classList.add("slide-move-right-to-center");
+            slide.classList.remove("slide_hidden");
         }
-        slide.classList.add("slide-to-left");
+        else{
+            slide.classList.add("slide-move-center-to-left");
+        }
     })
-    // screens.forEach(screen => {
-    //     let currentNumberScreen = screen.classList.contains('phone__screen-1') ? 1 : 
-    //         screen.classList.contains('phone__screen-2') ? 2 : 3;
-
-    //     screen.classList.remove('phone__screen-' + currentNumberScreen);
-    //     let nextNumber;
-    //     if(isLeft){
-    //         nextNumber = currentNumberScreen - 1;
-    //         if(nextNumber === 0){
-    //             nextNumber = 3;
-    //         }
-    //     }else{
-    //         nextNumber = currentNumberScreen + 1;
-    //         if(nextNumber === 4){
-    //             nextNumber = 1;
-    //         }
-    //     }
-    //     screen.classList.add('phone__screen-' + nextNumber);
-    // })
 }
 
 const changePhonePower = (phoneBase) => {
