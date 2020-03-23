@@ -184,11 +184,13 @@ const setQuoteTheme = (e) => {
     let modalTheme = document.querySelector('.modal-quote__theme');
     let theme = document.querySelector('.quote__subject');
     modalTheme.innerHTML = theme.value?`Тема: ${theme.value}`:'Без темы';
+    theme.value = '';
 }
 const setQuoteDesc = (e) => {
     let modalDesc = document.querySelector('.modal-quote__desc');
     let desc = document.querySelector('.quote__describe');
     modalDesc.innerHTML = desc.value?`Описание: ${desc.value}`:'Без описания';
+    desc.value = '';
 }
 const showQuoteModal = (e) => {
     let modal = document.querySelector('.overlay_modal-quote');

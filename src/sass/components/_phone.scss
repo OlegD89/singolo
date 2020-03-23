@@ -2,6 +2,9 @@
 .phone__base {
     border-radius: 28px;
     z-index: 3;
+    @include media-tablet {
+        width: 150px;
+    }
 }
 
 .phone__screen {
@@ -26,12 +29,21 @@
     left: 14px;
     top: 65px;
     background-position: -11px -134px;
+    @include media-tablet {
+        width: 131px;
+        height: 232px;
+        left: 10px;
+        top: 45px;
+    }
 }
 
 //Horizontal phone
 .horizontal-phone {    
     position: relative;
-    left: -176px;
+    right: 176px;
+    @include media-tablet {
+        right: 112px;
+    }
 }
 .horizontal-phone__base {
     transform: rotate(90deg);
@@ -45,6 +57,12 @@
     left: -62px;
     top: 135px;
     background-position: -125px -118px;
+    @include media-tablet {
+        width: 232px;
+        height: 131px;
+        left: -43px;
+        top: 94px;
+    }
 }
 
 .phone__screen-1 {

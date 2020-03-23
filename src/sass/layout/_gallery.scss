@@ -1,6 +1,9 @@
 //Images
 .gallery-images {
     max-height: 630px;
+    @include media-tablet {
+        max-height: 830px;
+    }
     overflow: hidden;
 }
 .gallery-filters {
@@ -24,6 +27,18 @@
     @extend %transition;  
     &_active{
         outline: 5px solid $color-additional;
+    }
+    @include media-tablet {
+        flex-basis: calc(33% - 15px);
+        &:nth-child(n+1){
+            margin: 10px;
+        }
+        &:nth-child(3n+1){
+            margin-left: 0;
+        }
+        &:nth-child(3n+3){
+            margin-right: 0;
+        }
     }
 }
 .gallery-image_1 {    

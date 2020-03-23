@@ -28,3 +28,7 @@
     background-color: darken($color: $color-light-second, $amount: 20%);
     @extend %transition;  
 }
+
+.photo {
+    width: 100%;
+}
