@@ -14,14 +14,16 @@
 }
 
 .visual-content {
-    height: 595px;
+    height: calc(100vw * 0.583);
     align-items: center;
     margin: 0 40px 0 45px;
     position: relative;
     overflow-x: hidden;
+    @include media-max {
+        height: 595px;
+    }
     @include media-mobile {
         margin: 0 10px 0 10px;
-        height: 220px;
     }
 }
 

@@ -1,9 +1,11 @@
 .slide {    
     margin: 0 40px 0 45px;
+    align-items: center;
     position: absolute;
     width: calc(100% - 85px);
     animation: 3.5s ease-in-out;
     @include media-mobile {
+        width: calc(100% - 40px);
         margin: 0 20px;
     }
 }

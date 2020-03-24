@@ -12,6 +12,10 @@
     overflow: hidden;
 }
 
+@mixin media-max {
+    @media (min-width: $content-width) { @content; }
+}
+
 @mixin media-tablet {
     @media (max-width: $tablet-width) { @content; }
 }
