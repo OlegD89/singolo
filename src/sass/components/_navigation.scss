@@ -1,5 +1,5 @@
 .header-navigation {
-    @include media-mobile {
+    @include media-tablet-min {
         display: none;
     }
 }

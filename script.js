@@ -177,7 +177,14 @@ const changeGalary = (blockFilters, setFilter) => {
 }
 
 const clickGalleryImage = (e) => {  
-    changeActive(e, 'gallery-image', 'gallery-image_active');
+    let img = e.target.classList.contains('gallery-image__src') ?
+        {
+            currentTarget: e.currentTarget,
+            target: e.target.parentElement
+        } :
+        e;
+    
+    changeActive(img, 'gallery-image', 'gallery-image_active');
 }
 //#endregion Portfolio
 

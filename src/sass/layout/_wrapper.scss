@@ -4,6 +4,9 @@
     @include media-tablet {
       max-width: $tablet-width;
     }
+    @include media-mobile {
+      max-width: $mobile-width;
+    }
 }
 
 .layout-3-columns {

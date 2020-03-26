@@ -3,7 +3,7 @@
     position: relative;
     width: 25px;
     height: 20px;
-    @include media-mobile {
+    @include media-tablet-min {
         display: inline-block;
     }
     &_opened {

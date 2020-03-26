@@ -3,7 +3,7 @@ nav.menu-mobile_hidden {
     opacity: 0;
 }
 
-@include media-mobile {
+@include media-tablet-min {
     .menu-mobile {
         transition: all 0.7s ease-out;
     }

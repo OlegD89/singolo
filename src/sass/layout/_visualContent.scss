@@ -32,12 +32,10 @@
     opacity: 0.25;
     width: 18px;
     height: 28px;
-    // margin-top: 25px;
     @include media-mobile {
         width: 14px;
         height: 24px;
         background-size: 100%;
-        // margin-top: 0;
     }
 }
 

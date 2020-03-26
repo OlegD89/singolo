@@ -81,7 +81,7 @@ html {
   align-items: center;
   transition: all 0.3s ease-out;
 }
-@media (max-width: 375px) {
+@media (max-width: 620px) {
   .header-content {
     justify-content: center;
     padding: 0;
@@ -105,6 +105,11 @@ html {
 @media (max-width: 768px) {
   .wrapper {
     max-width: 768px;
+  }
+}
+@media (max-width: 375px) {
+  .wrapper {
+    max-width: 375px;
   }
 }
 
@@ -266,19 +271,9 @@ html {
 }
 
 .gallery-images {
-  max-height: 630px;
   margin-top: 10px;
   overflow: hidden;
-}
-@media (max-width: 768px) {
-  .gallery-images {
-    max-height: 830px;
-  }
-}
-@media (max-width: 375px) {
-  .gallery-images {
-    max-height: 630px;
-  }
+  justify-content: flex-start;
 }
 
 .gallery-filters {
@@ -301,16 +296,18 @@ html {
   color: #dedede;
 }
 
-.gallery-image {
-  height: 187px;
-  background-repeat: no-repeat;
-}
 .gallery-image_active {
   outline: 5px solid #f06c64;
 }
+@media (min-width: 1020px) {
+  .gallery-image {
+    width: 220px;
+    height: 187px;
+  }
+}
 @media (max-width: 768px) {
   .gallery-image {
-    flex-basis: calc(33% - 18px);
+    flex-basis: calc(33% - 20px);
     margin: 10px;
   }
 }
@@ -322,134 +319,17 @@ html {
     position: relative;
     flex-basis: calc(50% - 14px);
   }
-  .gallery-image:before {
-    content: "";
-    display: block;
-    padding-top: 100%;
+  .gallery-image:nth-child(n+9) {
+    display: none;
   }
+}
+.gallery-image:nth-child(n+13) {
+  display: none;
 }
 
-.gallery-image_1 {
-  background-image: url("src/assets/images/Project_1.png");
-  background-position: -5px -12px;
-}
-@media (max-width: 375px) {
-  .gallery-image_1 {
-    background-size: 120%;
-  }
-}
-
-.gallery-image_2 {
-  background-image: url("src/assets/images/Project_2.png");
-  background-position: -79px -44px;
-}
-@media (max-width: 375px) {
-  .gallery-image_2 {
-    background-position: -42px -11px;
-    background-size: 155%;
-  }
-}
-
-.gallery-image_3 {
-  background-image: url("src/assets/images/Project_3.png");
-  background-position: -9px -2px;
-}
-@media (max-width: 375px) {
-  .gallery-image_3 {
-    background-size: 120%;
-  }
-}
-
-.gallery-image_4 {
-  background-image: url("src/assets/images/Project_4.png");
-  background-position: -23px -3px;
-}
-@media (max-width: 375px) {
-  .gallery-image_4 {
-    background-size: 155%;
-  }
-}
-
-.gallery-image_5 {
-  background-image: url("src/assets/images/Project_5.png");
-  background-position: -7px -17px;
-}
-@media (max-width: 375px) {
-  .gallery-image_5 {
-    background-size: 120%;
-  }
-}
-
-.gallery-image_6 {
-  background-image: url("src/assets/images/Project_6.png");
-  background-position: -14px -5px;
-}
-@media (max-width: 375px) {
-  .gallery-image_6 {
-    background-size: 155%;
-  }
-}
-
-.gallery-image_7 {
-  background-image: url("src/assets/images/Project_7.png");
-  background-position: -29px -40px;
-}
-@media (max-width: 375px) {
-  .gallery-image_7 {
-    background-size: 155%;
-  }
-}
-
-.gallery-image_8 {
-  background-image: url("src/assets/images/Project_8.png");
-  background-position: -23px -33px;
-}
-@media (max-width: 375px) {
-  .gallery-image_8 {
-    background-size: 155%;
-  }
-}
-
-.gallery-image_9 {
-  background-image: url("src/assets/images/Project_9.png");
-  background-position: -13px -3px;
-}
-@media (max-width: 375px) {
-  .gallery-image_9 {
-    background-size: 135%;
-  }
-}
-
-.gallery-image_10 {
-  background-image: url("src/assets/images/Project_10.png");
-  background-position: -138px -114px;
-}
-@media (max-width: 375px) {
-  .gallery-image_10 {
-    background-position: -49px -38px;
-    background-size: 155%;
-  }
-}
-
-.gallery-image_11 {
-  background-image: url("src/assets/images/Project_11.png");
-  background-position: -142px -176px;
-}
-@media (max-width: 375px) {
-  .gallery-image_11 {
-    background-position: -59px -66px;
-    background-size: 155%;
-  }
-}
-
-.gallery-image_12 {
-  background-image: url("src/assets/images/Project_12.png");
-  background-position: -35px -61px;
-}
-@media (max-width: 375px) {
-  .gallery-image_12 {
-    background-size: 155%;
-  }
+.gallery-image__src {
+  height: 100%;
+  width: 100%;
 }
 
 .about-us {
@@ -574,7 +454,7 @@ html {
   text-decoration: none;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 620px) {
   .header-navigation {
     display: none;
   }
@@ -1051,7 +931,7 @@ textarea.quote__input {
   width: 25px;
   height: 20px;
 }
-@media (max-width: 375px) {
+@media (max-width: 620px) {
   .hamburger {
     display: inline-block;
   }
@@ -1095,7 +975,7 @@ nav.menu-mobile_hidden {
   opacity: 0;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 620px) {
   .menu-mobile {
     transition: all 0.7s ease-out;
   }
