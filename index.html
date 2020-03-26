@@ -10,43 +10,75 @@
 <body>
     <header id="header" class="header">
         <div class="wrapper">
-            <div class="header-content flex">
-                <div class="logo">
-                    <a href="#" class="logo__link">
-                        <h1 class="logo__text">SINGOLO</h1>
-                        <span class="logo__footnote">*</span>
-                    </a>
+            <div class="header__mobile">
+                <span class="header__hamburger hamburger">
+                    <span class="hamburger__line"></span>
+                </span>
+                <div class="header-content flex">
+                    <div class="logo">
+                        <a href="#" class="logo__link">
+                            <h1 class="logo__text">SINGOLO</h1>
+                            <span class="logo__footnote">*</span>
+                        </a>
+                    </div>
+                    <nav class="header-navigation">
+                        <ul class="navigation flex">
+                            <li class="navigation-link"><a href="#header" class="navigation-link__text navigation-link_active">Home</a></li>
+                            <li class="navigation-link"><a href="#services" class="navigation-link__text">Services</a></li>
+                            <li class="navigation-link"><a href="#portfolio" class="navigation-link__text">Portfolio</a></li>
+                            <li class="navigation-link"><a href="#about" class="navigation-link__text">About</a></li>
+                            <li class="navigation-link"><a href="#contact" class="navigation-link__text">Contact</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="header-navigation">
-                    <ul class="navigation flex">
-                        <li class="navigation-link"><a href="#header" class="navigation-link__text navigation-link_active">Home</a></li>
-                        <li class="navigation-link"><a href="#services" class="navigation-link__text">Services</a></li>
-                        <li class="navigation-link"><a href="#portfolio" class="navigation-link__text">Portfolio</a></li>
-                        <li class="navigation-link"><a href="#about" class="navigation-link__text">About</a></li>
-                        <li class="navigation-link"><a href="#contact" class="navigation-link__text">Contact</a></li>
-                    </ul>
-                </nav>
             </div>
         </div>
+        
+        <nav class="menu-mobile overlay menu-mobile_hidden">
+            <div class="layout">
+                <div class="menu-mobile__header">
+                    <span class="header__hamburger hamburger hamburger_opened">
+                        <span class="hamburger__line"></span>
+                    </span>
+                    <div class="logo">
+                        <a href="#" class="logo__link">
+                            <h1 class="logo__text">SINGOLO</h1>
+                            <span class="logo__footnote">*</span>
+                        </a>
+                    </div>
+                </div>
+                <ul class="navigation menu-mobile__navigation flex">
+                    <li class="navigation-link"><a href="#header" class="navigation-link__text navigation-link_active">Home</a></li>
+                    <li class="navigation-link"><a href="#services" class="navigation-link__text">Services</a></li>
+                    <li class="navigation-link"><a href="#portfolio" class="navigation-link__text">Portfolio</a></li>
+                    <li class="navigation-link"><a href="#about" class="navigation-link__text">About</a></li>
+                    <li class="navigation-link"><a href="#contact" class="navigation-link__text">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
-        <section class="visual">
+        <section id="header" class="visual anchor background-visual_first">
             <div class="wrapper">
                 <div class="visual-content flex">
+                    <div class="slide flex slide__first">
+                        <div class="phone vertical-phone">
+                            <span class="phone__screen vertical-phone__screen phone__screen-2"></span>
+                            <img class="phone__base vertical-phone__base" src="./src/assets/images/phone.png" alt="Телефон расположенный вертикально">
+                        </div>
+                        <div class="phone horizontal-phone">
+                            <span class="phone__screen horizontal-phone__screen phone__screen-1"></span>
+                            <img class="phone__base horizontal-phone__base" src="./src/assets/images/phoneHorizontal.png" alt="Телефон расположенный горизонтально">
+                        </div>
+                    </div>
+                    <!-- <img class="slide flex slide__second" src="./src/assets/images/slide2.png" alt="Второй слайд">                        -->
+                    <div class="slide flex slide__second slide_hidden"></div>
                     <span class="navigation__icon navigation__icon_left"></span>
-                    <div class="phone vertical-phone">
-                        <span class="phone__screen vertical-phone__screen phone__screen-2"></span>
-                        <img class="phone__base vertical-phone__base" src="./src/assets/images/phone.png" alt="Телефон расположенный вертикально">
-                    </div>
-                    <div class="phone horizontal-phone">
-                        <span class="phone__screen horizontal-phone__screen phone__screen-1"></span>
-                        <img class="phone__base horizontal-phone__base" src="./src/assets/images/phone.png" alt="Телефон расположенный горизонтально">
-                    </div>
                     <span class="navigation__icon navigation__icon_right"></span>
                 </div>
             </div>
         </section>
-        <section id="services" class="our-services">
+        <section id="services" class="our-services scroll-href anchor">
             <div class="wrapper">
                 <div class="services-content">
                     <div class="services-description">
@@ -115,7 +147,7 @@
                 </div>
             </div>
         </section>
-        <section id="portfolio" class="portfolio">
+        <section id="portfolio" class="portfolio scroll-href anchor">
             <div class="wrapper">
               <div class="portfolio__section">
                 <div class="portfolio-description">
@@ -134,26 +166,24 @@
                     <span class="tag gallery__tag tag_art">Artwork</span>
                   </div>
                   <div class="gallery-images layout-4-columns">
-                    <span class="gallery-image gallery-image_1"></span>
-                    <span class="gallery-image gallery-image_2"></span>
-                    <span class="gallery-image gallery-image_3"></span>
-                    <span class="gallery-image gallery-image_4"></span>
-                    <span class="gallery-image gallery-image_5"></span>
-                    <span class="gallery-image gallery-image_6"></span>
-                    <span class="gallery-image gallery-image_7"></span>
-                    <span class="gallery-image gallery-image_8"></span>
-                    <span class="gallery-image gallery-image_9"></span>
-                    <span class="gallery-image gallery-image_10"></span>
-                    <span class="gallery-image gallery-image_11"></span>
-                    <span class="gallery-image gallery-image_12"></span>
-                    <span class="gallery-image gallery-image_11"></span>
-                    <span class="gallery-image gallery-image_10"></span>
+                    <div class="gallery-image"><img class="gallery-image__src" src="src/assets/images/Project_1.png" alt=""></img></div>
+                    <div class="gallery-image"><img class="gallery-image__src" src="src/assets/images/Project_2.png" alt=""></img></div>
+                    <div class="gallery-image"><img class="gallery-image__src" src="src/assets/images/Project_3.png" alt=""></img></div>
+                    <div class="gallery-image"><img class="gallery-image__src" src="src/assets/images/Project_4.png" alt=""></img></div>
+                    <div class="gallery-image"><img class="gallery-image__src" src="src/assets/images/Project_5.png" alt=""></img></div>
+                    <div class="gallery-image"><img class="gallery-image__src" src="src/assets/images/Project_6.png" alt=""></img></div>
+                    <div class="gallery-image"><img class="gallery-image__src" src="src/assets/images/Project_7.png" alt=""></img></div>
+                    <div class="gallery-image"><img class="gallery-image__src" src="src/assets/images/Project_8.png" alt=""></img></div>
+                    <div class="gallery-image"><img class="gallery-image__src" src="src/assets/images/Project_9.png" alt=""></img></div>
+                    <div class="gallery-image"><img class="gallery-image__src" src="src/assets/images/Project_10.png" alt=""></img></div>
+                    <div class="gallery-image"><img class="gallery-image__src" src="src/assets/images/Project_11.png" alt=""></img></div>
+                    <div class="gallery-image"><img class="gallery-image__src" src="src/assets/images/Project_12.png" alt=""></img></div>
                   </div>
                 </div>
               </div>
             </div>   
           </section>
-          <section id="about" class="about-us">
+          <section id="about" class="about-us scroll-href anchor">
             <div class="wrapper">
               <div class="about-us__section">
                 <div class="about-us-description about-us__description">
@@ -213,7 +243,7 @@
                             Black sea bass, Japanese eel brown trout Redfish Long-finned sand diver. Spiderfish electric stargazer titan triggerfish spiny-back batfish salmon shark southern Dolly Varden convict blenny. 
                         </p>
                     </div>
-                    <div class="layout-2-columns-two-thirds">
+                    <div class="quote__content layout-2-columns-two-thirds">
                         <div>
                             <form action class="quote__form" method="POST">
                                 <input type="text" class="quote__input" name="name" placeholder="Name (Required)" ><!-- required -->
@@ -223,7 +253,7 @@
                                 <button type="submit" class="button quote-button">Send</button>
                             </form>
                         </div>
-                        <div id="contact" class="contact-information">
+                        <div id="contact" class="contact-information scroll-href anchor">
                             <h3 class="contact-information__header">
                                 Contact information
                             </h3>

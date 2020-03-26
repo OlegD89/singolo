@@ -5,12 +5,15 @@
 }
 
 .about-us__section {
-    padding: 59px 38px 66px 40px;
+    padding: 59px 38px 68px 40px;
+    @include media-mobile {
+        padding: 30px;
+    }
 }
 
 .about-us-description__header {
     font-size: 3.0rem;
-    margin-bottom: 18px;
+    margin: 0 0 18px 3px;
     font-weight: 800;
     letter-spacing: -0.02rem;
 }

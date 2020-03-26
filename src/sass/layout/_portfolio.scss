@@ -5,11 +5,17 @@
 }
 
 .portfolio__section {
-    padding: 60px 38px 57px 38px;
+    padding: 60px 28px 56px 28px;
+    @include media-mobile {
+        padding: 30px 23px;
+    }
 }
 
 .portfolio-description {
-    margin-left: 3px;
+    margin-left: 13px;
+    @include media-mobile {
+        margin: 0 7px;
+    }
 }
 
 .portfolio-description__header {

@@ -5,6 +5,9 @@
 
 .services-content {
     padding: 59px 40px 61px 40px;
+    @include media-mobile {
+        padding: 30px;
+    }
 }
 
 .services-description {
@@ -14,7 +17,7 @@
 .services-description__header {
     font-size: 3rem;
     letter-spacing: 0.02rem;
-    margin-bottom: 18px;
+    margin: 0 0 18px 2px;
     font-weight: 700;
     color: $color-dark-second;
 }

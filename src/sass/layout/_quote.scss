@@ -6,11 +6,21 @@
 
 .quote__section {
     padding: 59px 40px 17px 38px;
+    @include media-mobile {
+        padding: 30px;
+    }
+}
+
+.quote__content > *:nth-child(n+1) {
+    @include media-mobile { 
+        flex-basis: 100%;
+    }
 }
 
 .quote__header {
     font-size: 3rem;
     font-weight: 700;
+    margin-left: 2px;
 }
 
 .quote__text {

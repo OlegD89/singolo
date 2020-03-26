@@ -3,6 +3,12 @@
 .service {
     display: flex;
     margin-top: 28px;
+    @include media-tablet {
+        flex-basis: 45%;
+    }
+    @include media-mobile {
+        flex-basis: 100%;
+    }
 }
 
 .icon-circle {

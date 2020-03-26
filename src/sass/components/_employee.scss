@@ -1,4 +1,13 @@
+.staff {
+    margin-left: 2px;
+}
 
+.employee {
+    @include media-mobile {
+        flex-basis: 100%;
+        margin-bottom: 34px;
+    }
+}
 .empolyee__name {
     margin:10px 0 9px;
     @include limit-line();    
@@ -27,4 +36,8 @@
     border-color: $color-dark;
     background-color: darken($color: $color-light-second, $amount: 20%);
     @extend %transition;  
+}
+
+.photo {
+    width: 100%;
 }
