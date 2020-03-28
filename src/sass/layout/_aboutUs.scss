@@ -1,0 +1,31 @@
+.about-us {
+    background-color: $color-light-second;
+    color: $color-dark-second;
+    border-bottom: 6px solid $color-light
+}
+
+.about-us__section {
+    padding: 59px 38px 68px 40px;
+    @include media-mobile {
+        padding: 33px 30px 11px 30px;
+    }
+}
+
+.about-us-description__header {
+    font-size: 3.0rem;
+    margin: 0 0 18px 3px;
+    font-weight: 800;
+    letter-spacing: -0.02rem;
+}
+.about-us-description__text {
+    font-size: 1.8rem;
+    text-align: justify;
+    line-height: 3.0rem;
+    color: $color-dark-three;
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+
+.about-us__description {
+    padding-bottom: 27px;
+}

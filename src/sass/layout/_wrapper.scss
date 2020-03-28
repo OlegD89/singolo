@@ -1,0 +1,43 @@
+.wrapper {
+    max-width: $content-width;
+    margin: auto;
+    @include media-tablet {
+      max-width: $tablet-width-max;
+    }
+    @include media-mobile {
+      max-width: $mobile-width-max;
+    }
+}
+
+.layout-3-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layout-3-columns > * {
+  flex-basis: 32%;
+}
+
+.layout-4-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layout-4-columns > * {
+    margin: 10px;
+    flex-basis: calc(25% - 20px);
+}
+
+//двухколоночный 2/3 + 1/3
+.layout-2-columns-two-thirds {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layout-2-columns-two-thirds > *:first-child {
+  flex-basis: 66%;
+}
+
+.layout-2-columns-two-thirds > *:last-child {
+  flex-basis: 31.7%;
+}

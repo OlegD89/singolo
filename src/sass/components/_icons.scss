@@ -1,0 +1,93 @@
+.icon-small {
+    min-width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-circle {
+    border: solid 2px $color-dark-second;
+    border-radius: 50%;
+    min-width: 55px;
+    height: 55px;
+    margin-left: 2px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-circle-small {
+    border: solid 1px $color-dark-second;
+    border-radius: 50%;
+    min-width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    &:hover {
+        border-color: $color-dark;
+        background-color: darken($color: $color-light-second, $amount: 20%);
+        @extend %transition;  
+    }
+}
+
+.icons {
+    display: flex;
+}
+
+.icons > * {
+    margin-left: 8px;
+}
+
+.icon_custom-disign {    
+    background-image: url("src/assets/icons/pen.png");
+}
+
+.icon_inovative-ideas {    
+    background-image: url("src/assets/icons/bulb.png");
+}
+
+.icon_love-is-answer {    
+    background-image: url("src/assets/icons/heart.png");
+}
+
+.icon_responsive-layout {    
+    background-image: url("src/assets/icons/phone.png");
+}
+
+.icon_round-lock-support {    
+    background-image: url("src/assets/icons/bubble.png");
+}
+
+.ico_feel-like-star {    
+    background-image: url("src/assets/icons/star.png");
+}
+
+.icon_facebook {    
+    background-image: url("src/assets/icons/facebook.png");
+}
+
+.icon_google {    
+    background-image: url("src/assets/icons/google+.png");
+}
+
+.icon_twitter {    
+    background-image: url("src/assets/icons/twitter.png");
+}
+
+.icon_in {    
+    background-image: url("src/assets/icons/linkedin.png");
+}
+
+.icon_geo {    
+    background-image: url("src/assets/icons/location.png");
+    background-position: 4px 6px;
+}
+
+.icon_tel {    
+    background-image: url("src/assets/icons/tel.png");
+    background-position: 2px 5px;
+}
+
+.icon_email {    
+    background-image: url("src/assets/icons/mail.png");
+    background-position: 1px 8px;
+}

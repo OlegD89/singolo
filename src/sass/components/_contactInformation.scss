@@ -1,0 +1,27 @@
+.contact-information__header {
+    margin: 6px 0 8px;
+    letter-spacing: -0.02rem;
+    @include media-mobile {
+        margin-top: 32px;
+    }
+}
+
+.contact-information__text {    
+    line-height: 2.2rem;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.reference {
+    margin: 2px 0 1px;
+    display: flex;
+    align-items: center;
+}
+
+.reference__text {
+    text-decoration: none;
+    color: $color-light-four;
+    font-size: 1.2rem;
+    padding-left: 4px;
+}

@@ -1,0 +1,71 @@
+//Phone
+.phone {
+    width: 100%;
+}
+
+.phone__base {
+    width: 100%;
+    border-radius: 2.6vw;
+    box-shadow: 2.5vw 2.5vw 0px rgba(0,0,0,0.1);
+    z-index: 3;
+    @include media-max {
+        border-radius: 26.5px;
+        box-shadow: 25.5px 25.5px 0px rgba(0,0,0,0.1);
+    }
+}
+
+.phone__screen {
+    z-index: 5;
+    background-repeat: no-repeat;
+    background-size: 56.8vw;
+    @include media-max {
+        background-size: 579.4px;
+    }
+}
+
+.vertical-phone {
+    width: 25.5%;
+    position: relative;
+    left: 2.8%;
+}
+
+.vertical-phone__screen {
+    width: 87.5%;
+    height: 72.3%;
+    position: absolute;
+    left: 6.5%;
+    top: 14%;
+    background-position: 3.7% 54.6%;
+}
+
+//Horizontal phone
+.horizontal-phone {
+    width: 54%;
+    position: relative;
+    right: 6.5%;
+}
+
+.horizontal-phone__screen {
+    width: 72.8%;
+    height: 86%;
+    position: absolute;
+    left: 13%;
+    top: 6.5%;
+    background-position: 49.9% 30.3%;
+}
+
+.phone__screen-1 {
+    background-image: url("src/assets/images/screen1.jpg");
+}
+
+.phone__screen-2 {
+    background-image: url("src/assets/images/screen2.jpg");
+}
+
+.phone__screen-3 {
+    background-image: url("src/assets/images/screen3.jpg");
+}
+
+.phone__screen-off {
+    display: none;
+}

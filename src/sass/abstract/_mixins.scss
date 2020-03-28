@@ -1,0 +1,33 @@
+@mixin limit-lines($line) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+}
+
+@mixin limit-line {    
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@mixin media-max {
+    @media (min-width: $content-width) { @content; }
+}
+
+// @mixin media-tablet {
+//     @media (max-width: $tablet-width) { @content; }
+// }
+
+// @mixin media-mobile {
+//     @media (max-width: $mobile-width) { @content; }
+// }
+
+@mixin media-tablet {
+    @media (max-width: $tablet-width-max) { @content; }
+}
+
+@mixin media-mobile {
+    @media (max-width: $mobile-width-max) { @content; }
+}

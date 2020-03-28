@@ -1,0 +1,39 @@
+.quote {
+    background-color: $color-additional;
+    color: $color-light-four;
+    border-bottom: 6px solid $color-shadow-second;
+}
+
+.quote__section {
+    padding: 59px 40px 17px 38px;
+    @include media-tablet {
+        padding: 53px 37px 39px 59px;
+    }
+    @include media-mobile {
+        padding: 44px 31px 42px 30px;
+    }
+}
+
+.quote__content > *:nth-child(n+1) {
+    @include media-mobile { 
+        flex-basis: 100%;
+    }
+}
+
+.quote__header {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-left: 2px;
+}
+
+.quote__text {
+    margin: 18px 0 20px;
+    font-size: 1.7rem;
+    line-height: 3rem;
+    text-align: justify;
+}
+
+.quote-description {
+    margin-bottom: 35px;
+    margin-left: 3px;
+}

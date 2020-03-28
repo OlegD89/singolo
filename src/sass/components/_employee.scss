@@ -1,0 +1,43 @@
+.staff {
+    margin-left: 2px;
+}
+
+.employee {
+    @include media-mobile {
+        flex-basis: 100%;
+        margin-bottom: 34px;
+    }
+}
+.empolyee__name {
+    margin:10px 0 9px;
+    @include limit-line();    
+    letter-spacing: -0.03rem;
+    &.empolyee__name_sv {
+        letter-spacing: 0;
+    }
+}
+.employee__description {
+    font-size: 1.2rem;
+    line-height: 2.0rem;
+    letter-spacing: 0.05rem;
+    text-align: justify;
+    margin: 0 0 25px;
+    min-height: 40px;
+    @include limit-lines(2)
+}
+.employee__contacts {
+    display: flex;
+    >*{
+        margin-right: 8px;
+    }
+}
+
+.employee__icon:hover {
+    border-color: $color-dark;
+    background-color: darken($color: $color-light-second, $amount: 20%);
+    @extend %transition;  
+}
+
+.photo {
+    width: 100%;
+}

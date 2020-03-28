@@ -1,0 +1,55 @@
+.visual {
+    padding-top: 80px;
+    transition: all 3.5s ease-out;
+    @include media-mobile {
+        padding-top: 60px;
+    }
+}
+
+.background-visual_first {
+    background-color: $color-additional;
+    border-bottom: 6px solid $color-shadow-second;
+}
+
+.background-visual_second {
+    background-color: $color-another;
+    border-bottom: 6px solid $color-another-darker;
+}
+
+.visual-content {
+    height: calc(100vw * 0.583);
+    align-items: center;
+    margin: 0 40px 0 45px;
+    position: relative;
+    overflow-x: hidden;
+    @include media-max {
+        height: 595px;
+    }
+    @include media-tablet {
+        margin: 0 27px 0 29px;
+    }
+    @include media-mobile {
+        margin: 0 10px;
+    }
+}
+
+.navigation__icon {
+    background: url("src/assets/icons/chev.png") no-repeat;
+    opacity: 0.25;
+    width: 18px;
+    height: 28px;
+    @include media-mobile {
+        width: 14px;
+        height: 24px;
+        background-size: 100%;
+    }
+}
+
+.navigation__icon_right {
+    transform: scaleX(-1)
+}
+
+.navigation__icon:hover {
+    opacity: 0.5;
+    @extend %transition;
+}

@@ -1,0 +1,32 @@
+.our-services {    
+    background-color: $color-light-second;
+    border-bottom: 6px solid $color-shadow-three;
+}
+
+.services-content {
+    padding: 59px 40px 61px 40px;
+    @include media-tablet {
+        padding-left: 41px;
+    }
+    @include media-mobile {
+        padding: 25px 29px 15px 32px;
+    }
+}
+
+.services-description {
+    margin-bottom: 14px;
+}
+
+.services-description__header {
+    font-size: 3rem;
+    letter-spacing: 0.02rem;
+    margin: 0 0 18px 2px;
+    font-weight: 700;
+    color: $color-dark-second;
+}
+
+.services-description__text {    
+    line-height: 3rem;
+    text-align: justify;
+    color: $color-dark-three;
+}
