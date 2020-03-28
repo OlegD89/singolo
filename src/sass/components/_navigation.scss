@@ -1,5 +1,5 @@
 .header-navigation {
-    @include media-tablet {
+    @include media-mobile {
         display: none;
     }
 }
@@ -23,8 +23,8 @@
     text-decoration: none;
     color: $color-light;
     &:hover {
-        color: $color-additional;
         @extend %transition;
+        color: $color-additional;
     }
 }
 

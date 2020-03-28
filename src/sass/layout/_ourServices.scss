@@ -5,8 +5,11 @@
 
 .services-content {
     padding: 59px 40px 61px 40px;
+    @include media-tablet {
+        padding-left: 41px;
+    }
     @include media-mobile {
-        padding: 30px;
+        padding: 25px 29px 15px 32px;
     }
 }
 

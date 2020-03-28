@@ -46,13 +46,10 @@ const clickNavigation = (e) => {
 
 const onScroll = (e, scrollMarginTop) => {
     let currentPosition = window.scrollY;
-    let header = document.querySelector('.header-content');
-    let isHeaderSmall = header.classList.contains('header-content_small');
-    if(currentPosition==0 && isHeaderSmall){
-        header.classList.remove('header-content_small');
-    }else if(currentPosition>0 && !isHeaderSmall){
-        header.classList.add('header-content_small');
-    }
+    setHeaderSmall(currentPosition, 
+        [document.querySelector('.header-content'),
+         document.querySelector('.menu-mobile__header')]
+         );
 
     let anchors = document.querySelectorAll('.anchor');
     let navigationLinks = document.querySelectorAll('.navigation-link>a');
@@ -67,6 +64,15 @@ const onScroll = (e, scrollMarginTop) => {
             }
             return;
         }
+    }
+}
+
+setHeaderSmall = (currentPosition, elements) => {
+    let isHeaderSmall = elements[0].classList.contains('header-content_small');
+    if(currentPosition==0 && isHeaderSmall){
+        elements.forEach(el=>el.classList.remove('header-content_small'));
+    }else if(currentPosition>0 && !isHeaderSmall){
+        elements.forEach(el=>el.classList.add('header-content_small'));
     }
 }
 
