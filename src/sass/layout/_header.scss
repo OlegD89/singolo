@@ -19,13 +19,13 @@
     margin: 0 38px 0 41px;
     align-items: center;
     transition: all 0.3s ease-out;
-    @include media-tablet {
+    @include media-mobile {
         justify-content: center;
         padding: 0;
         width: calc(100% - 38px);
     }
 }
-.header-content_small {
+.header-content.header-content_small {
     height: 40px;
     padding-bottom: 0;
 }

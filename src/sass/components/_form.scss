@@ -24,11 +24,6 @@ textarea.quote__input {
     resize: none;
 }
 
-// textarea.quote__input::placeholder:nth-child() {
-//     font-size: 3rem;
-// }
-// textarea.quote__input:::first-letter
-
 .quote__input:focus {
     outline: none;
 }
@@ -37,6 +32,9 @@ textarea.quote__input {
     display: inline-block;
     padding: 10px 30px;
     border-radius: 4px;
+    @include media-mobile {
+        width: 100%;
+    }
 }
 
 .quote-button:hover {
