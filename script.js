@@ -12,7 +12,7 @@ window.onload = function() {
     document.querySelector('.visual-content').addEventListener('click', clickPhone)
     document.querySelector('.gallery-filters').addEventListener('click', clickGalleryFilters)
     document.querySelector('.gallery-images').addEventListener('click', clickGalleryImage)
-    document.querySelector('.quote-button').addEventListener('click', clickQuoteButton)
+    document.querySelector('.quote__form').addEventListener('submit', clickQuoteButton)
     document.querySelector('.overlay_modal-quote').addEventListener('click', clickModal)
 }
 
